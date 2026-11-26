@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/finalize-export.mjs",
     "start": "npx serve out",
     "lint": "tsc --noEmit",
     "images:placeholders": "node scripts/make-placeholders.mjs",
-    "images:brand": "node scripts/make-brand-assets.mjs"
+    "images:optimize": "node scripts/optimize-images.mjs",
+    "images:brand": "node scripts/make-brand-assets.mjs",
+    "seo:dates": "node scripts/content-dates.mjs",
+    "seo:crawl": "node scripts/seo-crawl.mjs",
+    "seo:indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
