@@ -47,6 +47,11 @@ export default function Footer() {
                 </li>
               ))}
               <li>
+                <Link href={href("faq")} className={link}>
+                  {t("faqPage.link")}
+                </Link>
+              </li>
+              <li>
                 <Link href={href("privacy-policy")} className={link}>
                   {t("ui.privacy")}
                 </Link>

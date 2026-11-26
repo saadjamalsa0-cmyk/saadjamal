@@ -10,9 +10,10 @@ Bilingual (Arabic default, English at `/en`), fully static (plain HTML — hosts
 | --- | --- | --- |
 | `/` | `/en` | Home: hero, trust strip, about, services, process, why us, who we serve, FAQ, CTA |
 | `/about` | `/en/about` | Story, mission & vision, values, CR registration details |
-| `/services` | `/en/services` | The 4 services |
+| `/services` | `/en/services` | The 3 services |
 | `/services/<slug>` | `/en/services/<slug>` | One page per service (own SEO title, FAQ, schema) |
-| `/contact` | `/en/contact` | Contact details + quotation form (opens WhatsApp / email) |
+| `/contact` | `/en/contact` | Contact details + quotation form (sent by email) |
+| `/faq` | `/en/faq` | Buyer questions |
 | `/privacy-policy` | `/en/privacy-policy` | Privacy policy (not in sitemap, `noindex`) |
 
 No city pages, no blog, no CMS — by design.
@@ -66,7 +67,7 @@ Test locally: copy `.dev.vars.example` to `.dev.vars`, add the key, then `pnpm b
 
 `pnpm build && npx wrangler deploy` (Cloudflare Worker + static files, see `wrangler.toml`).
 
-The email form **needs Cloudflare**. On cPanel / Apache the pages work but only the WhatsApp button can send.
+The email form **needs Cloudflare**. On cPanel / Apache the pages work but the form cannot send.
 
 ## SEO system (same method as gulforbit.sa)
 

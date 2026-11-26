@@ -12,6 +12,7 @@ const SECTIONS = {
   about: [...COPY, "components/about", "config/company.ts"],
   services: ["content/services.ts"],
   contact: [...COPY, "components/contact", "config/company.ts"],
+  faq: [...COPY, "app/[locale]/faq"],
   "services/scaffolders-supply": SERVICES,
   "services/welder-supply": SERVICES,
   "services/manpower-supply": SERVICES,

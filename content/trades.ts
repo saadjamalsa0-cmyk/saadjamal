@@ -1,8 +1,7 @@
 import type { Bi } from "@/lib/i18n";
 
 /**
- * Trades a buyer can ask for, grouped as on the group company's worker-category list.
- * Presented as "ask for", never as stock or headcount: availability is confirmed per quotation.
+ * Trades a buyer can ask for.  * Presented as "ask for", never as stock or headcount: availability is confirmed per quotation.
  */
 export const tradeGroups: { name: Bi; trades: Bi[] }[] = [
   {

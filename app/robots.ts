@@ -10,8 +10,10 @@ const aiAgents = [
   "ChatGPT-User",
   "Google-Extended",
   "PerplexityBot",
+  "Perplexity-User",
   "ClaudeBot",
   "Claude-SearchBot",
+  "anthropic-ai",
   "Applebot-Extended",
   "CCBot",
 ];

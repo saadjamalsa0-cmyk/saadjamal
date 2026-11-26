@@ -33,6 +33,10 @@
         "title": "Manpower Supply in Saudi Arabia | Saad Jamal",
         "description": "Skilled, semi-skilled and general workers for construction, maintenance and industry in Saudi Arabia, temporary or project-length. Request a quote."
       }
+    },
+    "faq": {
+      "title": "Scaffolder, Welder & Manpower Supply FAQ | Saad Jamal",
+      "description": "Buyer answers on scaffolder, welder and manpower supply: what drives the price, what to send for a quotation, and what to agree before work starts."
     }
   },
   "aboutHome": {
@@ -373,5 +377,63 @@
     ],
     "serviceHeading": "{service} in Saudi Arabia",
     "talkTitle": "Talk to us directly"
+  },
+  "faqPage": {
+    "title": "Buyer questions",
+    "link": "FAQ",
+    "lead": "Direct answers for anyone requesting scaffolders, welders or workers for a project in Saudi Arabia: price, what to send, and what to agree before work starts.",
+    "groups": [
+      {
+        "h": "Quotation and cost",
+        "items": [
+          {
+            "q": "What decides the price of manpower supply?",
+            "a": "Trade and skill level, number of workers, duration, working hours and overtime, site location, who provides accommodation, transport, meals and protective equipment, and site entry requirements. We publish no fixed rates; the price comes in a written quotation."
+          },
+          {
+            "q": "What should I send to get an accurate quotation?",
+            "a": "Trades and the number of each, site, start date, duration, working hours, the documents or cards your site requires, and accommodation and transport arrangements. Use the form or email info@saadjamal.sa."
+          },
+          {
+            "q": "Can I request several trades at once?",
+            "a": "Yes. Put each trade, its number and duration on its own line, and the quotation states what can be supplied for each."
+          }
+        ]
+      },
+      {
+        "h": "What the service covers",
+        "items": [
+          {
+            "q": "What is the difference between scaffolder supply and scaffolding rental?",
+            "a": "Scaffolder supply means the people who erect, alter and dismantle scaffolds. Scaffolding rental means the material itself. We supply the people; we do not rent equipment."
+          },
+          {
+            "q": "How is manpower supply different from recruitment?",
+            "a": "Manpower supply covers a project's need for a set period. Recruitment is the process of employing a worker from abroad under your own sponsorship. State how long you need people and we will say what can be offered."
+          },
+          {
+            "q": "Do you serve companies and factories outside Dammam?",
+            "a": "We serve projects across Saudi Arabia from our office in Dammam. Name the site city in your request, as it affects transport and accommodation."
+          }
+        ]
+      },
+      {
+        "h": "Before work starts",
+        "items": [
+          {
+            "q": "What should I check before workers enter the site?",
+            "a": "Names against valid IDs or iqamas, the trade cards or qualification certificates you require, protective equipment, and a briefing on the site's safety procedures."
+          },
+          {
+            "q": "What should be agreed in writing?",
+            "a": "Numbers and trades, duration and working hours, timesheet approval, replacement terms, invoicing and payment dates, and who covers accommodation, transport and protective equipment."
+          },
+          {
+            "q": "When should I send a shutdown manpower request?",
+            "a": "As soon as you know the shutdown window and approximate numbers. An early request leaves time to review documents and site passes before the start date."
+          }
+        ]
+      }
+    ]
   }
 }

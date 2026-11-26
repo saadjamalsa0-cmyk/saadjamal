@@ -28,6 +28,14 @@ export const BANNED_CLAIMS = [
   /عمال سقالات معتمد|معتمدون وذوو/,
   /temporary (or|and) permanent/i,
   /مؤقتة أو دائمة|مؤقت أو دائم/,
+  // Other companies' names and credentials: nothing copied in may bring these with it.
+  /\bgulf ?orbit\b|جلف أوربت/i,
+  /\baramco\b|أرامكو/i,
+  /\bTUV[- ]?(certified|carded)\b/i,
+  /\b48\s?[–-]\s?72\b|\b24[- ]hour (response|reply)\b/i,
+  /\bsince 20[01]\d\b|منذ (عام )?20[01]\d/i,
+  // Wording not used without the owner's approval.
+  /تأجير (ال)?عمال/,
   // Build bugs
   /\bundefined undefined\b|\bPLACEHOLDER\b/,
 ];

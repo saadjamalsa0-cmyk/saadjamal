@@ -53,6 +53,13 @@ export const serviceDetails: Record<string, Bi<ServiceDetail>> = {
             "العمل على المرتفعات يتطلب حزام أمان كامل ونقطة تثبيت مناسبة وإحاطة للمنطقة أسفل العمل. اتفق على هذه المتطلبات وعلى الجهة التي توفر معدات الوقاية قبل المباشرة.",
           ],
         },
+        {
+          h: "ما الذي يحدد تكلفة توريد عمال السقالات",
+          p: [
+            "تتأثر التكلفة بعدد العمال والمشرفين، والمدة وساعات الدوام، ونظام السقالة (معدنية أنبوبية أو كابلوك أو رينج لوك)، وارتفاع العمل وتعقيده، وموقع المشروع، ومتطلبات الدخول والبطاقات، ومن يوفر السكن والنقل ومعدات الوقاية.",
+            "سواء كتبت في طلبك «عمال تركيب سقالات» أو «فني سقالات»، حدّد المهام الفعلية: تركيب أو تعديل أو فك سقالات معدنية، وهل المواد متوفرة في موقعك.",
+          ],
+        },
       ],
       table: {
         caption: "مقارنة مختصرة بين أنظمة السقالات",
@@ -129,6 +136,13 @@ export const serviceDetails: Record<string, Bi<ServiceDetail>> = {
           p: [
             "Many sites use a tag at the scaffold access point: green means ready for use, yellow means use with conditions, red means do not use. The details vary by site, so send us your procedure.",
             "Work at height needs a full body harness, a suitable anchor point and a barricaded area below. Agree these requirements, and who provides protective equipment, before work starts.",
+          ],
+        },
+        {
+          h: "What affects the cost of scaffolder supply",
+          p: [
+            "Cost depends on the number of scaffolders and supervisors, duration and working hours, the scaffold system (tube and fitting, Cuplock or Ringlock), the height and complexity of the work, site location, entry and card requirements, and who provides accommodation, transport and protective equipment.",
+            "Whether you call it scaffolding manpower or scaffolder hire, state the actual task: erecting, altering or dismantling metal scaffolds, and whether the material is already on your site.",
           ],
         },
       ],
@@ -212,6 +226,13 @@ export const serviceDetails: Record<string, Bi<ServiceDetail>> = {
             "تشمل معدات الوقاية قناع اللحام بعدسة مناسبة، وقفازات وملابس مقاومة للحرارة، وحماية للتنفس عند الحاجة.",
           ],
         },
+        {
+          h: "ما الذي يحدد تكلفة توريد اللحامين",
+          p: [
+            "تتأثر التكلفة بعملية اللحام ونوع المعدن، والأوضاع المطلوبة (من 1G إلى 6G)، والكود واختبار القبول، وعدد اللحامين والمدة، ومن يوفر الماكينات والمستهلكات، وموقع المشروع.",
+            "لحام 6G للأنابيب يختلف عن لحام الهياكل في الورشة، لذلك يوفر الوصف الدقيق في الطلب وقت المراجعة ويمنع رفض اللحام عند الاختبار.",
+          ],
+        },
       ],
       table: {
         caption: "أوضاع اللحام التي يجب تحديدها",
@@ -288,6 +309,13 @@ export const serviceDetails: Record<string, Bi<ServiceDetail>> = {
           p: [
             "Site welding needs a hot work permit, combustibles removed or covered, a fire watch with an extinguisher and enough ventilation, especially in confined spaces, which need their own entry permit.",
             "Protective equipment includes a welding helmet with a suitable lens, heat-resistant gloves and clothing, and respiratory protection where required.",
+          ],
+        },
+        {
+          h: "What affects the cost of welder supply",
+          p: [
+            "Cost depends on the welding process and material, the positions required (1G to 6G), the code and acceptance test, the number of welders and duration, who provides machines and consumables, and the site location.",
+            "6G pipe welding is a different request from structural welding in a workshop, so a precise description saves review time and avoids a welder failing the test on arrival.",
           ],
         },
       ],
@@ -371,6 +399,13 @@ export const serviceDetails: Record<string, Bi<ServiceDetail>> = {
             "عيّن من طرفك مشرفًا يوزع المهام يوميًا ويوقّع كشف الحضور.",
           ],
         },
+        {
+          h: "توريد عمالة للشركات والمصانع: ما الذي يحدد التكلفة",
+          p: [
+            "تتأثر التكلفة بالمهن ومستوى المهارة، والأعداد، والمدة وساعات العمل والإضافي، وموقع المشروع، ومتطلبات الدخول، ومن يوفر السكن والنقل والوجبات ومعدات الوقاية.",
+            "إذا كنت تبحث عن شركة توريد عمالة في الدمام أو المنطقة الشرقية، فأرسل المهن والأعداد والموقع، ويوضح عرض السعر المكتوب ما يمكن توفيره وشروطه.",
+          ],
+        },
       ],
       table: {
         caption: "أمثلة على المهن بحسب مرحلة المشروع",
@@ -447,6 +482,13 @@ export const serviceDetails: Record<string, Bi<ServiceDetail>> = {
           p: [
             "Spread headcount across project phases instead of ordering the peak on day one: site works, then structure, then finishing. It reduces idle time and makes supervision easier.",
             "Name a supervisor on your side to allocate tasks daily and sign the timesheet.",
+          ],
+        },
+        {
+          h: "Manpower supply for companies and factories: what affects cost",
+          p: [
+            "Cost depends on the trades and skill level, numbers, duration, working hours and overtime, site location, entry requirements, and who provides accommodation, transport, meals and protective equipment.",
+            "If you are looking for a manpower supplier in Dammam or the Eastern Province, send the trades, numbers and site, and the written quotation states what can be supplied and on what terms.",
           ],
         },
       ],
