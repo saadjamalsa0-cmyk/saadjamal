@@ -11,7 +11,7 @@ export default function QuickQuote({ service }: { service?: string }) {
   const locale = useLocale() as Locale;
   const t = useTranslations();
   const row = "flex items-start gap-4";
-  const tile = "flex h-11 w-11 shrink-0 items-center justify-center bg-white text-crimson-700 shadow-sm";
+  const tile = "flex h-11 w-11 shrink-0 items-center justify-center bg-white text-crimson-700 shadow-xs";
   return (
     <section id="quote" className="scroll-mt-20 border-t border-ink-200 bg-white py-24 md:py-28">
       <div className="container">

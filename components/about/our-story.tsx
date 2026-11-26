@@ -16,10 +16,10 @@ export default function OurStory() {
           </div>
         </div>
         <div className="relative lg:col-span-5">
-          <div className="relative aspect-[4/5] overflow-hidden bg-ink-100">
+          <div className="relative aspect-4/5 overflow-hidden bg-ink-100">
             <Image src="/images/about-3.jpg" alt={t("imageAlt")} fill sizes="(min-width:1024px) 480px, 92vw" className="object-cover" />
           </div>
-          <div className="absolute -bottom-5 start-[-1rem] h-24 w-24 -skew-x-[12deg] bg-crimson-700 sm:start-[-1.5rem]" aria-hidden="true" />
+          <div className="absolute -bottom-5 -inset-s-4 h-24 w-24 -skew-x-12 bg-crimson-700 sm:-inset-s-6" aria-hidden="true" />
         </div>
       </div>
     </section>

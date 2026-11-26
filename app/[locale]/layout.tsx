@@ -75,7 +75,7 @@ export default async function RootLayout({ children, params }: { children: React
   return (
     <html lang={locale} dir={SEO_CONFIG.localeMetadata[locale as Locale].dir}>
       <body>
-        <a href="#main" className="sr-only z-[60] bg-white px-4 py-2 font-semibold text-ink-950 focus:not-sr-only focus:fixed focus:start-4 focus:top-4">
+        <a href="#main" className="sr-only z-60 bg-white px-4 py-2 font-semibold text-ink-950 focus:not-sr-only focus:fixed focus:inset-s-4 focus:top-4">
           {t("skipToContent")}
         </a>
         <GoogleAnalytics />

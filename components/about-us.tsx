@@ -14,12 +14,12 @@ export default function AboutUs() {
     <section className="py-24 md:py-32">
       <div className="container grid items-center gap-16 lg:grid-cols-12 lg:gap-20">
         <div className="reveal relative mx-auto w-full max-w-xl pb-16 lg:col-span-6">
-          <div className="absolute -start-4 -top-4 h-40 w-40 border-s-4 border-t-4 border-crimson-700" aria-hidden="true" />
-          <div className="relative aspect-[4/5] w-[86%] overflow-hidden bg-stone-100 shadow-lift">
+          <div className="absolute -inset-s-4 -top-4 h-40 w-40 border-s-4 border-t-4 border-crimson-700" aria-hidden="true" />
+          <div className="relative aspect-4/5 w-[86%] overflow-hidden bg-stone-100 shadow-lift">
             <Image src="/images/about-1.jpg" alt={t("aboutHome.imageAlt")} fill sizes="(min-width:1024px) 500px, 80vw" className="object-cover" />
           </div>
-          <div className="absolute bottom-0 end-0 w-[56%] border-8 border-white bg-stone-100 shadow-lift">
-            <div className="relative aspect-[4/3]">
+          <div className="absolute bottom-0 inset-e-0 w-[56%] border-8 border-white bg-stone-100 shadow-lift">
+            <div className="relative aspect-4/3">
               <Image src="/images/about-2.jpg" alt={t("aboutHome.imageAlt2")} fill sizes="320px" className="object-cover" />
             </div>
           </div>
@@ -28,7 +28,7 @@ export default function AboutUs() {
         <div className="lg:col-span-6">
           <span className="eyebrow">{t("aboutHome.eyebrow")}</span>
           <h2 className="section-title mt-4">{t("aboutHome.title")}</h2>
-          <div className="mt-6 space-y-4 text-base leading-loose text-ink-600 md:text-lg">
+          <div className="mt-6 space-y-4 text-base leading-loose text-ink-600 md:text-lg/7">
             {paragraphs.map((p) => (
               <p key={p.slice(0, 24)}>{p}</p>
             ))}

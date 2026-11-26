@@ -7,12 +7,12 @@ export default function HomeAudience() {
   const t = useTranslations("audience");
   const items = t.raw("items") as { icon: string; title: string; text: string }[];
   return (
-    <section className="relative isolate overflow-hidden bg-gradient-to-br from-crimson-700 via-crimson-800 to-crimson-900 py-24 text-white">
-      <Swoosh tone="crimson" className="-top-24 end-[-12rem] -z-10 w-[760px]" />
+    <section className="relative isolate overflow-hidden bg-linear-to-br/srgb from-crimson-700 via-crimson-800 to-crimson-900 py-24 text-white">
+      <Swoosh tone="crimson" className="-top-24 -inset-e-48 -z-10 w-[760px]" />
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow !text-white/80">{t("eyebrow")}</span>
-          <h2 className="section-title mt-4 !text-white">{t("title")}</h2>
+          <span className="eyebrow text-white/80!">{t("eyebrow")}</span>
+          <h2 className="section-title mt-4 text-white!">{t("title")}</h2>
         </div>
         <div className="mt-14 grid gap-px bg-white/20 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item) => (

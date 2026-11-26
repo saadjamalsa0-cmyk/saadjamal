@@ -26,14 +26,14 @@ export default function Services() {
         <div className="mt-14 grid gap-8 lg:grid-cols-3">
           {services.map((s, i) => (
             <Link key={s.slug} href={getLocalizedPath(locale, `services/${s.slug}`)} className="reveal card card-hover group flex flex-col">
-              <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
+              <div className="relative aspect-4/3 overflow-hidden bg-stone-100">
                 <Image src={s.image} alt={tr(s.name, locale)} fill sizes="(min-width:1024px) 400px, 92vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                <span className="absolute end-0 top-0 bg-white px-4 py-2 text-xl font-bold text-crimson-700" aria-hidden="true">
+                <span className="absolute inset-e-0 top-0 bg-white px-4 py-2 text-xl font-bold text-crimson-700" aria-hidden="true">
                   0{i + 1}
                 </span>
               </div>
               <div className="relative flex flex-1 flex-col p-7">
-                <span className="icon-tile absolute -top-7 start-7 shadow-card ring-4 ring-white">
+                <span className="icon-tile absolute -top-7 inset-s-7 shadow-card ring-4 ring-white">
                   <Icon name={s.icon} className="h-7 w-7" />
                 </span>
                 <h3 className="mt-7 text-2xl font-bold leading-snug">{tr(s.name, locale)}</h3>

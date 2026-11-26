@@ -22,7 +22,7 @@ export default function PageHeader({ title, lead, crumbs, updated }: Props) {
   return (
     <section className="relative isolate overflow-hidden border-b border-ink-200 bg-stone-50 py-12 md:py-20">
       <div className="bg-grid-dark absolute inset-0 -z-10" aria-hidden="true" />
-      <Swoosh className="-top-16 end-[-10rem] -z-10 w-[640px] md:w-[820px]" />
+      <Swoosh className="-top-16 -inset-e-40 -z-10 w-[640px] md:w-[820px]" />
       <div className="container">
         <nav aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2 text-sm text-ink-500">
@@ -49,9 +49,9 @@ export default function PageHeader({ title, lead, crumbs, updated }: Props) {
             })}
           </ol>
         </nav>
-        <h1 className="mt-6 max-w-3xl text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">{title}</h1>
-        <div className="mt-6 h-1 w-20 -skew-x-[30deg] bg-crimson-700" aria-hidden="true" />
-        {lead && <p className="mt-6 max-w-3xl text-base leading-relaxed text-ink-700 md:text-lg">{lead}</p>}
+        <h1 className="mt-6 max-w-3xl text-3xl font-bold leading-tight sm:text-4xl/10 md:text-5xl/none">{title}</h1>
+        <div className="mt-6 h-1 w-20 skew-x-[-30deg] bg-crimson-700" aria-hidden="true" />
+        {lead && <p className="mt-6 max-w-3xl text-base leading-relaxed text-ink-700 md:text-lg/7">{lead}</p>}
         {updated && (
           <p className="mt-5 text-sm text-ink-500">
             {t("common.updated")}{" "}

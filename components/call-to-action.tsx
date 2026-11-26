@@ -11,13 +11,13 @@ export default function CallToAction() {
   const t = useTranslations();
   return (
     <section className="relative isolate overflow-hidden bg-crimson-700 py-16 text-white md:py-20">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-crimson-600 via-crimson-700 to-crimson-900" aria-hidden="true" />
-      <Swoosh tone="crimson" className="-bottom-32 end-[-10rem] -z-10 w-[700px]" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-br/srgb from-crimson-600 via-crimson-700 to-crimson-900" aria-hidden="true" />
+      <Swoosh tone="crimson" className="-bottom-32 -inset-e-40 -z-10 w-[700px]" />
       <div className="container">
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center lg:gap-12">
           <div className="max-w-2xl">
-            <h2 className="text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl">{t("cta.title")}</h2>
-            <p className="mt-4 text-base leading-relaxed text-white/85 md:text-lg">{t("cta.text")}</p>
+            <h2 className="text-2xl font-bold leading-tight text-white sm:text-3xl/9 md:text-4xl/10">{t("cta.title")}</h2>
+            <p className="mt-4 text-base leading-relaxed text-white/85 md:text-lg/7">{t("cta.text")}</p>
           </div>
           <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
             <Link href={getLocalizedPath(locale, "contact")} className="btn btn-light">

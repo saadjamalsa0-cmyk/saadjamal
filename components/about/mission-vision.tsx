@@ -16,7 +16,7 @@ export default function MissionVision() {
               <Icon name={x.icon} className="h-7 w-7" />
             </span>
             <h2 className="mt-6 text-2xl font-bold md:text-3xl">{x.title}</h2>
-            <p className="mt-4 leading-relaxed text-ink-600 md:text-lg">{x.text}</p>
+            <p className="mt-4 leading-relaxed text-ink-600 md:text-lg/7">{x.text}</p>
           </div>
         ))}
       </div>

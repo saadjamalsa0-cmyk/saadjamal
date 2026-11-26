@@ -78,7 +78,7 @@ export default function Navbar({ services }: { services: { slug: string; name: s
 
         <div className="flex items-center gap-1 sm:gap-3">
           <LanguageSwitcher />
-          <Link href={href("contact")} className="btn btn-primary hidden !py-2.5 sm:inline-flex">
+          <Link href={href("contact")} className="btn btn-primary hidden py-2.5! sm:inline-flex">
             {t("ui.requestQuote")}
           </Link>
           <button

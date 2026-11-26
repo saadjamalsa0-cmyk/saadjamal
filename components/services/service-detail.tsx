@@ -21,7 +21,7 @@ export default function ServiceBody({ service, detail, faqs }: { service: Servic
       <section className="section">
         <div className="container grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
-            <div className="relative aspect-[16/10] overflow-hidden bg-ink-100">
+            <div className="relative aspect-16/10 overflow-hidden bg-ink-100">
               <Image src={service.image} alt={name} fill priority sizes="(min-width:1024px) 720px, 92vw" className="object-cover" />
             </div>
             <p className="mt-8 text-lg leading-relaxed text-ink-700">{tr(service.intro, locale)}</p>
@@ -52,7 +52,7 @@ export default function ServiceBody({ service, detail, faqs }: { service: Servic
               <div key={section.h} className="mt-14">
                 <h2 className="text-2xl font-bold md:text-3xl">{section.h}</h2>
                 {section.p.map((p) => (
-                  <p key={p.slice(0, 30)} className="mt-4 leading-relaxed text-ink-700 md:text-lg">
+                  <p key={p.slice(0, 30)} className="mt-4 leading-relaxed text-ink-700 md:text-lg/7">
                     {p}
                   </p>
                 ))}
@@ -175,7 +175,7 @@ export default function ServiceBody({ service, detail, faqs }: { service: Servic
                     <span className="block text-lg font-bold text-ink-950">{tr(s.name, locale)}</span>
                     <span className="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold text-crimson-700">
                       {t("ui.readMore")}
-                      <ForwardArrow className="h-4 w-4 transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1" />
+                      <ForwardArrow className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:rtl:-translate-x-1" />
                     </span>
                   </span>
                 </Link>

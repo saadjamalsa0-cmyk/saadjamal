@@ -6,7 +6,7 @@ import { Mail, WhatsAppIcon } from "@/components/ui/icons";
 import { whatsAppHref } from "@/config/company";
 
 const field =
-  "w-full border border-ink-200 bg-white px-4 py-3.5 text-ink-900 placeholder:text-ink-400 transition-colors focus:border-crimson-700 focus:outline-none focus:ring-2 focus:ring-crimson-700/20";
+  "w-full border border-ink-200 bg-white px-4 py-3.5 text-ink-900 placeholder:text-ink-400 transition-colors focus:border-crimson-700 focus:outline-hidden focus:ring-2 focus:ring-crimson-700/20";
 
 type Props = {
   /** Passed from the server so service content is never shipped to the browser. */
@@ -136,7 +136,7 @@ export default function ContactForm({ services, defaultService = "" }: Props) {
       </label>
 
       {/* Honeypot: hidden from people, filled by bots. */}
-      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute -left-[9999px] h-0 w-0" />
+      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute left-[-9999px] h-0 w-0" />
 
       {error && (
         <p role="alert" className="border-s-4 border-crimson-700 bg-crimson-50 px-4 py-3 text-sm font-medium text-crimson-800">

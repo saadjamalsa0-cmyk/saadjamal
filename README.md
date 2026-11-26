@@ -2,7 +2,7 @@
 
 Website of **مؤسسة سعد جمال الاسمري للمقاولات** (Saad Jamal Al-Asmari Contracting Establishment), CR 7055602549.
 
-Bilingual (Arabic default, English at `/en`), fully static (plain HTML — hosts anywhere), built with Next.js + Tailwind CSS.
+Bilingual (Arabic default, English at `/en`), fully static (plain HTML — hosts anywhere), built with Next.js 16, React 19, Tailwind CSS 4 and TypeScript 7.
 
 ## Pages
 
@@ -42,7 +42,7 @@ Same organisation as gulforbit.sa; see `CLAUDE.md`.
 | Services, service-page content, trades | `content/` |
 | Pages | `app/[locale]/` |
 | Headers and redirects | `config/site-routing.mjs` |
-| Colours | `tailwind.config.ts` |
+| Colours and styles | `app/globals.css` (`@theme`) |
 | Images | `IMAGE_PROMPTS.md` + `pnpm images:optimize` |
 
 ## Contact form email (Resend, as on gulforbit.sa)
