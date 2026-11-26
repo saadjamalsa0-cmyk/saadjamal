@@ -1,3 +1,7 @@
+# Needed by older pnpm (Cloudflare's build image uses 9.x), which rejects a workspace file without it.
+packages:
+  - "."
+
 allowBuilds:
   '@parcel/watcher': true
   '@swc/core': true
