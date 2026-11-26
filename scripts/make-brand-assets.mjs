@@ -75,7 +75,8 @@ const svg = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   <text x="600" y="250" font-family="Geeza Pro, Arial, sans-serif" font-size="64" font-weight="700" fill="#0a0a0c">سعد جمال للمقاولات</text>
   <text x="600" y="330" font-family="Helvetica Neue, Arial, sans-serif" font-size="46" font-weight="700" fill="#0a0a0c">Saad Jamal Contracting</text>
   <rect x="600" y="360" width="110" height="6" fill="#8f0f2c"/>
-  <text x="600" y="420" font-family="Helvetica Neue, Arial, sans-serif" font-size="28" fill="#555560">Scaffolders &amp; specialized manpower in Saudi Arabia</text>
+  <text x="600" y="420" font-family="Helvetica Neue, Arial, sans-serif" font-size="28" fill="#555560">Scaffolders &amp; specialized manpower</text>
+  <text x="600" y="460" font-family="Helvetica Neue, Arial, sans-serif" font-size="28" fill="#555560">in Saudi Arabia</text>
   <text x="600" y="545" font-family="Helvetica Neue, Arial, sans-serif" font-size="30" font-weight="600" fill="#8f0f2c">saadjamal.sa</text>
 </svg>`;
 await sharp({ create: { width: 1200, height: 630, channels: 3, background: "#faf9f7" } })
