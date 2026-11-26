@@ -8,12 +8,12 @@
     -webkit-text-size-adjust: 100%;
   }
   html[lang="ar"] {
-    --font-body: var(--font-ar);
-    --font-display: var(--font-ar);
+    --font-body: "IBM Plex Sans Arabic";
+    --font-display: "IBM Plex Sans Arabic";
   }
   html[lang="en"] {
-    --font-body: var(--font-en);
-    --font-display: var(--font-en);
+    --font-body: "Plus Jakarta Sans";
+    --font-display: "Plus Jakarta Sans";
   }
   body {
     @apply bg-white font-sans text-ink-700 antialiased;

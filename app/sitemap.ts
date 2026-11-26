@@ -1,23 +1,26 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/content/services";
-import { contentDate, languageAlternates, pageUrl } from "@/lib/seo";
-import { staticRoutes } from "@/lib/i18n";
+import { contentDate } from "@/lib/content-dates";
+import { getLanguageAlternates, getLocalizedUrl } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
-/**
- * Every page in both languages with hreflang alternates and a real <lastmod> from git history.
- * The privacy page is deliberately left out.
- */
+/** Every page in both languages with hreflang alternates and a real <lastmod>. Privacy is left out. */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const paths: string[] = [...staticRoutes, ...services.map((s) => `/services/${s.slug}/`)];
-  return paths.flatMap((path) =>
+  const pages = [
+    { path: "", priority: 1, frequency: "weekly" as const },
+    { path: "services", priority: 0.9, frequency: "monthly" as const },
+    { path: "about", priority: 0.8, frequency: "monthly" as const },
+    { path: "contact", priority: 0.9, frequency: "monthly" as const },
+    ...services.map((s) => ({ path: `services/${s.slug}`, priority: 0.9, frequency: "monthly" as const })),
+  ];
+  return pages.flatMap((page) =>
     (["ar", "en"] as const).map((locale) => ({
-      url: pageUrl(locale, path),
-      lastModified: contentDate(path),
-      changeFrequency: path === "/" ? ("weekly" as const) : ("monthly" as const),
-      priority: path === "/" ? 1 : path === "/about/" ? 0.8 : 0.9,
-      alternates: { languages: languageAlternates(path) },
+      url: getLocalizedUrl(locale, page.path),
+      lastModified: contentDate(page.path),
+      changeFrequency: page.frequency,
+      priority: page.priority,
+      alternates: { languages: getLanguageAlternates(page.path) },
     })),
   );
 }

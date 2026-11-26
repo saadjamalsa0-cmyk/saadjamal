@@ -4,16 +4,17 @@
 import { execFileSync } from "node:child_process";
 import { writeFileSync } from "node:fs";
 
+const COPY = ["messages/ar.json", "messages/en.json"];
 const SERVICES = ["content/services.ts", "content/service-details.ts", "content/trades.ts"];
+// Keys are the localized-neutral page paths used by lib/content-dates.ts.
 const SECTIONS = {
-  "/": ["content/site.ts", "components/sections.tsx"],
-  "/about/": ["content/site.ts", "config/company.ts"],
-  "/services/": ["content/services.ts"],
-  "/contact/": ["content/site.ts", "config/company.ts"],
-  "/services/scaffolders-supply/": SERVICES,
-  "/services/welder-supply/": SERVICES,
-  "/services/manpower-supply/": SERVICES,
-  "/services/equipment-rental/": SERVICES,
+  "": [...COPY, "app/[locale]/page.tsx"],
+  about: [...COPY, "components/about", "config/company.ts"],
+  services: ["content/services.ts"],
+  contact: [...COPY, "components/contact", "config/company.ts"],
+  "services/scaffolders-supply": SERVICES,
+  "services/welder-supply": SERVICES,
+  "services/manpower-supply": SERVICES,
 };
 
 const git = (...args) => execFileSync("git", args, { encoding: "utf8" }).trim();

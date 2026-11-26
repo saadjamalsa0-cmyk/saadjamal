@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "سعد جمال للمقاولات | Saad Jamal Contracting",
     short_name: "سعد جمال",
-    description: "Scaffolders, welders, specialized manpower and equipment rental in Saudi Arabia",
+    description: "Scaffolders, welders and specialized manpower in Saudi Arabia",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

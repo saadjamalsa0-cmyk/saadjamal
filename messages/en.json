@@ -1,0 +1,428 @@
+{
+  "seo": {
+    "home": {
+      "title": "Saad Jamal Contracting: Scaffolders & Manpower, Saudi Arabia",
+      "description": "Dammam-based Saad Jamal Contracting supplies scaffolders, welders and skilled and general manpower across Saudi Arabia. Request a written quotation."
+    },
+    "about": {
+      "title": "About Us | Saad Jamal Contracting, Dammam",
+      "description": "About Saad Jamal Al-Asmari Contracting Establishment, CR 7055602549, in Dammam: scaffolder, welder and manpower supply for projects in Saudi Arabia."
+    },
+    "services": {
+      "title": "Scaffolder, Welder & Manpower Supply | Saad Jamal",
+      "description": "Three services: scaffolder supply, welder supply, and skilled and general manpower for construction, maintenance and industry across Saudi Arabia."
+    },
+    "contact": {
+      "title": "Contact Us & Request a Quote | Saad Jamal Contracting",
+      "description": "Call or WhatsApp +966 55 831 5359, or email Saad Jamal Contracting in Dammam, for a written quotation on scaffolders, welders or manpower."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Saad Jamal Contracting",
+      "description": "Privacy policy of Saad Jamal Al-Asmari Contracting Establishment: what data we receive, how we use it and your rights."
+    },
+    "serviceDetail": {
+      "scaffolders-supply": {
+        "title": "Scaffolder Supply in Saudi Arabia | Saad Jamal",
+        "description": "Scaffolders to erect, alter and dismantle cuplock, ringlock and tube-and-fitting scaffolds in Saudi Arabia. Send your scope for a written quotation."
+      },
+      "welder-supply": {
+        "title": "Welder Supply in Saudi Arabia | Saad Jamal",
+        "description": "Welders for structural, pipe, maintenance and workshop work in Saudi Arabia. State process, material and positions to get a written quotation."
+      },
+      "manpower-supply": {
+        "title": "Manpower Supply in Saudi Arabia | Saad Jamal",
+        "description": "Skilled, semi-skilled and general workers for construction, maintenance and industry in Saudi Arabia, temporary or project-length. Request a quote."
+      }
+    }
+  },
+  "aboutHome": {
+    "eyebrow": "About our company",
+    "title": "Specialist manpower, with a focus on scaffolders",
+    "paragraphs": [
+      "At Saad Jamal Contracting we focus on specialist manpower, scaffolders above all, together with welders and general and specialist workers.",
+      "We meet your project needs with flexible supply, temporary or for the length of the project, under a written scope that fixes numbers, trades, duration and site requirements before work starts."
+    ],
+    "points": [
+      "A focus on scaffolders",
+      "Flexible supply, temporary or project-length",
+      "Commitment to safety and quality"
+    ],
+    "imageAlt": "Site engineer and team reviewing construction drawings",
+    "imageAlt2": "Concrete and reinforcement works on a building site"
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "lead": "Saad Jamal Al-Asmari Contracting Establishment is a Saudi establishment, Commercial Registration 7055602549, based in Dammam, supplying scaffolders, welders and manpower.",
+    "storyTitle": "About our company",
+    "story": [
+      "At Saad Jamal Contracting we focus on specialist manpower, scaffolders above all, together with welders and general and specialist workers.",
+      "We meet your project needs with flexible supply, temporary or for the length of the project, under a written scope that fixes numbers, trades, duration and site requirements before work starts.",
+      "We are a new company, and we treat that as an advantage: we work with clear management methods, document everything, and aim to make your first project with us the start of a long relationship."
+    ],
+    "valuesTitle": "Our values",
+    "values": [
+      {
+        "icon": "target",
+        "title": "Transparency",
+        "text": "Costs, duration and numbers stated clearly in writing before we start."
+      },
+      {
+        "icon": "gem",
+        "title": "Quality",
+        "text": "People chosen for the trade, and careful work."
+      },
+      {
+        "icon": "shield",
+        "title": "Safety",
+        "text": "No project is worth risking the safety of workers."
+      },
+      {
+        "icon": "handshake",
+        "title": "Partnership",
+        "text": "We build lasting partnerships with our clients and employees."
+      }
+    ],
+    "missionTitle": "Our mission",
+    "mission": "To deliver skilled manpower to projects in Saudi Arabia, with a special focus on scaffolders, supporting efficient work, worker safety and client satisfaction, and to build lasting partnerships through transparency, quality management and keeping agreed dates.",
+    "visionTitle": "Our vision",
+    "vision": "To be a supplier clients can rely on for specialist labour, scaffolders above all, in construction and infrastructure, with organised, sustainable practices that support project success and national development goals.",
+    "regTitle": "Registration details",
+    "regText": "We are open about our official details. These are the Commercial Registration details as shown on the Ministry of Commerce certificate.",
+    "regRows": [
+      {
+        "label": "Registered name"
+      },
+      {
+        "label": "Unified national number"
+      },
+      {
+        "label": "Issue date"
+      },
+      {
+        "label": "Entity type"
+      },
+      {
+        "label": "Registration status"
+      }
+    ],
+    "statusActive": "Active",
+    "verify": "Verify via the Ministry of Commerce",
+    "imageAlt": "Three workers in helmets and safety harnesses reviewing a checklist beside a steel scaffold on a building site"
+  },
+  "audience": {
+    "eyebrow": "Who we work with",
+    "title": "Who we serve on construction and maintenance projects",
+    "items": [
+      {
+        "icon": "building",
+        "title": "Contracting companies",
+        "text": "Workers, scaffolders and welders for projects large and small."
+      },
+      {
+        "icon": "factory",
+        "title": "Industrial facilities",
+        "text": "Support for maintenance, shutdown and industrial works."
+      },
+      {
+        "icon": "home",
+        "title": "Developers & project owners",
+        "text": "Covering the project's workforce needs through to handover."
+      },
+      {
+        "icon": "handshake",
+        "title": "Subcontractors",
+        "text": "Specialist labour that supports your delivery when you need it."
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "lead": "Tell us about your project. We will review the details and come back with the next steps and a written quotation.",
+    "cardsTitle": "Get in touch",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "hours": "Working hours",
+    "address": "Address",
+    "cr": "Commercial Registration",
+    "formTitle": "Send us your project details",
+    "formText": "Fill in the form and WhatsApp opens with a ready-to-send message, or send it by email instead.",
+    "fields": {
+      "name": "Full name",
+      "phone": "Mobile number",
+      "email": "Email (optional)",
+      "service": "Service needed",
+      "location": "Project location (city)",
+      "message": "Project details",
+      "messagePlaceholder": "e.g. I need 20 scaffolders for a project in Dammam for 3 months…",
+      "other": "Other / not sure",
+      "select": "Choose a service"
+    },
+    "sendWhatsapp": "Send via WhatsApp",
+    "sendEmail": "Or send by email",
+    "required": "Please fill in your name, mobile number and project details.",
+    "privacyNote": "Your details are not stored on this website; they are sent straight to WhatsApp or your email app.",
+    "waGreeting": "Hello, I would like to request a quotation.",
+    "labels": {
+      "name": "Name",
+      "phone": "Mobile",
+      "service": "Service",
+      "location": "Location",
+      "details": "Details"
+    },
+    "notYetAddress": "Address coming soon"
+  },
+  "cta": {
+    "title": "Have a project? Let's start with a conversation",
+    "text": "Tell us about your project and we will come back with the next steps and a written quotation."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Quick answers before you get in touch",
+    "items": [
+      {
+        "q": "What services does Saad Jamal Contracting provide?",
+        "a": "We provide scaffolders supply, welder supply, and general and specialized manpower for construction, maintenance and industrial projects across Saudi Arabia."
+      },
+      {
+        "q": "Which scaffolding types can your workers handle?",
+        "a": "System scaffolding (Cuplock, Ringlock, Kwikstage), tube and fitting, mobile and tower, and suspended and cantilever scaffolds, including erection, inspection and dismantling."
+      },
+      {
+        "q": "How do I get a quotation?",
+        "a": "Contact us through the form, WhatsApp or phone and tell us the trades, numbers, duration and project location. We review the request and send a written quotation."
+      },
+      {
+        "q": "How long can you supply workers for?",
+        "a": "Temporary or for the length of the project. State the expected duration and start date in your request and they are fixed in the quotation."
+      },
+      {
+        "q": "Is the company officially registered?",
+        "a": "Yes. Saad Jamal Al-Asmari Contracting Establishment holds Commercial Registration No. 7055602549 issued by the Ministry of Commerce, and the registration is active. You can verify it through the Ministry of Commerce platform."
+      },
+      {
+        "q": "Do you serve only specific cities?",
+        "a": "We serve projects across Saudi Arabia, and our office is in Dammam."
+      }
+    ]
+  },
+  "footer": {
+    "about": "Saad Jamal Al-Asmari Contracting Establishment: scaffolders, welders and specialized manpower for construction and industrial projects across Saudi Arabia.",
+    "quickLinks": "Quick links",
+    "services": "Services",
+    "contact": "Contact",
+    "registered": "Commercial Reg. No."
+  },
+  "hero": {
+    "eyebrow": "Scaffolders · Welders · Specialized manpower",
+    "titleA": "Scaffolders & specialized manpower",
+    "titleB": "for projects across Saudi Arabia",
+    "text": "Saad Jamal Al-Asmari Contracting Establishment (CR 7055602549) supplies scaffolders, welders and general and specialized workers for construction, maintenance and industrial projects across Saudi Arabia, from its office in Dammam.",
+    "badges": [
+      "Active commercial registration",
+      "Written quotation for every request",
+      "Temporary or project-length supply"
+    ]
+  },
+  "nav": [
+    {
+      "href": "/",
+      "label": "Home"
+    },
+    {
+      "href": "/about/",
+      "label": "About Us"
+    },
+    {
+      "href": "/services/",
+      "label": "Services"
+    },
+    {
+      "href": "/contact/",
+      "label": "Contact"
+    }
+  ],
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you requested doesn't exist or has moved.",
+    "back": "Back to home"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: November 2026",
+    "sections": [
+      {
+        "h": "Who we are",
+        "p": "This website (saadjamal.sa) is operated by Saad Jamal Al-Asmari Contracting Establishment, Commercial Registration No. 7055602549."
+      },
+      {
+        "h": "What we collect",
+        "p": "This website does not store form data on our servers. When you use the contact form, a message is prepared for WhatsApp or your email app and reaches us only when you send it. The site may use strictly necessary cookies or anonymous analytics if we enable them in future."
+      },
+      {
+        "h": "How we use your data",
+        "p": "We use the information you send us only to answer your enquiry and prepare a quotation. We do not sell your data or share it with third parties for marketing."
+      },
+      {
+        "h": "Your rights",
+        "p": "You may ask to see, correct or delete your data at any time by contacting us."
+      },
+      {
+        "h": "Contact",
+        "p": "For any question about this policy, please reach us through the Contact page."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "Five clear steps from request to site",
+    "steps": [
+      {
+        "title": "Define requirements",
+        "text": "You tell us the trades, numbers, duration and project location."
+      },
+      {
+        "title": "Written quotation",
+        "text": "We send a clear written quotation covering numbers, duration and cost."
+      },
+      {
+        "title": "Contract & documents",
+        "text": "We sign the contract and prepare worker documents to your site's requirements."
+      },
+      {
+        "title": "Supply & mobilisation",
+        "text": "Workers start at your site as agreed."
+      },
+      {
+        "title": "Follow-up & support",
+        "text": "We follow up on performance, safety and compliance, and provide replacements when needed."
+      }
+    ]
+  },
+  "servicesPage": {
+    "title": "Our Services",
+    "lead": "Scaffolders, welders and general and specialized manpower for construction, maintenance and industrial projects across the Kingdom.",
+    "helpTitle": "Need workers for your project?",
+    "helpText": "Tell us the trades, numbers and duration and we will prepare a written quotation."
+  },
+  "servicesSection": {
+    "eyebrow": "Our services",
+    "title": "Manpower for construction and industry",
+    "text": "Three services covering your project's workforce needs, in the numbers and duration you need."
+  },
+  "trust": {
+    "items": [
+      {
+        "icon": "badge",
+        "title": "Officially registered",
+        "text": "Active Commercial Registration, Ministry of Commerce"
+      },
+      {
+        "icon": "hardhat",
+        "title": "Crews matched to your scope",
+        "text": "Scaffolding, welding, general and specialist labour"
+      },
+      {
+        "icon": "shield",
+        "title": "Safety first",
+        "text": "Site safety requirements agreed before work starts"
+      },
+      {
+        "icon": "file",
+        "title": "Transparent costs",
+        "text": "Clear cost tracking and timely payments"
+      }
+    ]
+  },
+  "ui": {
+    "requestQuote": "Request a Quote",
+    "whatsapp": "Chat on WhatsApp",
+    "callUs": "Call us",
+    "learnMore": "Learn more",
+    "viewAllServices": "View all services",
+    "readMore": "Service details",
+    "home": "Home",
+    "menu": "Menu",
+    "close": "Close",
+    "skipToContent": "Skip to content",
+    "switchLanguage": "العربية",
+    "switchLanguageLabel": "التبديل إلى العربية",
+    "allRightsReserved": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "whatWeDo": "What we do",
+    "whatsIncluded": "What the service covers",
+    "relatedServices": "Other services you may need",
+    "faqTitle": "Frequently asked questions"
+  },
+  "why": {
+    "eyebrow": "Why Saad Jamal",
+    "title": "Key reasons to choose us",
+    "items": [
+      {
+        "icon": "hardhat",
+        "title": "A scaffolding focus",
+        "text": "Scaffolders for erection, alteration and dismantling, matched to the system used on your site."
+      },
+      {
+        "icon": "badge",
+        "title": "Documents before mobilisation",
+        "text": "Ask for worker IDs, iqamas and trade cards and review them before anyone arrives on site."
+      },
+      {
+        "icon": "shield",
+        "title": "Written scope",
+        "text": "Numbers, trades, duration and responsibilities are written into the quotation before work starts."
+      },
+      {
+        "icon": "users",
+        "title": "Flexible supply",
+        "text": "Temporary or project-length supply to match your schedule."
+      },
+      {
+        "icon": "file",
+        "title": "Transparent cost tracking",
+        "text": "Clear cost tracking and timely payment of dues."
+      },
+      {
+        "icon": "gem",
+        "title": "Strong commitment to safety and quality",
+        "text": "We work to support your programme while meeting the site's quality and safety requirements."
+      }
+    ]
+  },
+  "common": {
+    "brandSuffix": "Contracting",
+    "navLabel": "Main navigation",
+    "menuLabel": "Menu",
+    "greeting": "Hello, I'd like to ask about your services.",
+    "quoteGreeting": "Hello, I'd like to request a quotation.",
+    "serviceGreeting": "Hello, I'd like to ask about: {service}",
+    "quoteSubject": "Quotation request",
+    "heroImageAlt": "Steel scaffolding tower with working platforms, safety guardrails and access stairs",
+    "crActive": "Active commercial registration",
+    "crShort": "Active CR",
+    "whyTrust": "Why trust us",
+    "updated": "Updated:",
+    "facts": "Facts at a glance",
+    "requestChecklist": "What to put in your request",
+    "arrivalChecks": "What to check on arrival",
+    "tradesTitle": "Trades you can ask for",
+    "tradesNote": "State the trade and number in your request; availability is confirmed in the quotation.",
+    "identityNote": "{name}, Commercial Registration {cr}. {domain} is this establishment's website.",
+    "quickActions": "Quick actions",
+    "call": "Call",
+    "getQuote": "Get a Quote",
+    "emailShort": "Email",
+    "officeName": "Saad Jamal services",
+    "crName": "Commercial Registration",
+    "country": "Saudi Arabia",
+    "knowsAbout": [
+      "Scaffolder supply",
+      "Welder supply",
+      "Manpower supply"
+    ],
+    "serviceHeading": "{service} in Saudi Arabia",
+    "office": "Head office",
+    "talkTitle": "Talk to us directly"
+  }
+}

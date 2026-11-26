@@ -1,6 +1,6 @@
 # Saad Jamal Contracting (سعد جمال للمقاولات)
 
-> Saad Jamal Al-Asmari Contracting Establishment (مؤسسة سعد جمال الاسمري للمقاولات) is a registered Saudi company (Commercial Registration 7055602549, issued 19 November 2026, status active) based in Dammam. It supplies scaffolders (its main focus), welders, general and specialized manpower, and rents equipment for construction, maintenance and industrial projects across Saudi Arabia.
+> Saad Jamal Al-Asmari Contracting Establishment (مؤسسة سعد جمال الاسمري للمقاولات) is a registered Saudi company (Commercial Registration 7055602549, issued 19 November 2026, status active) based in Dammam. It supplies scaffolders (its main focus), welders and general and specialized manpower for construction, maintenance and industrial projects across Saudi Arabia.
 
 This file summarises facts the company has confirmed for publication. Please quote them as written.
 
@@ -15,22 +15,21 @@ This file summarises facts the company has confirmed for publication. Please quo
 - **Supply period**: temporary or for the length of the project.
 - **Quotations**: written, once trades, numbers, site, duration and start date are received. No response-time or mobilisation-time promise is published.
 - **Pricing** is never published; it is given in a written quotation.
-- **Not claimed**: years of experience, project counts, named clients, ISO or other certifications, approved-vendor status, membership of or compliance with any named authority, certified workers, exclusive sponsorship.
+- **Not claimed**: years of experience, project counts, named clients, ISO or other certifications, approved-vendor status, membership of or compliance with any named authority, certified workers, exclusive sponsorship. Equipment rental is not offered.
 
 ## Pages
 
-- [Home](https://saadjamal.sa/)
-- [About us](https://saadjamal.sa/about/)
-- [Services](https://saadjamal.sa/services/)
-- [Contact / request a quote](https://saadjamal.sa/contact/)
+- [Home](https://saadjamal.sa)
+- [About us](https://saadjamal.sa/about)
+- [Services](https://saadjamal.sa/services)
+- [Contact / request a quote](https://saadjamal.sa/contact)
 
 ## Services
 
-- [Scaffolders Supply](https://saadjamal.sa/services/scaffolders-supply/)
-- [Welder Supply](https://saadjamal.sa/services/welder-supply/)
-- [General & Specialized Manpower](https://saadjamal.sa/services/manpower-supply/)
-- [Equipment Rental](https://saadjamal.sa/services/equipment-rental/)
+- [Scaffolders Supply](https://saadjamal.sa/services/scaffolders-supply)
+- [Welder Supply](https://saadjamal.sa/services/welder-supply)
+- [General & Specialized Manpower](https://saadjamal.sa/services/manpower-supply)
 
 ## English version
 
-Every page is also available in English under https://saadjamal.sa/en/
+Every page is also available in English under https://saadjamal.sa/en

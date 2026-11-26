@@ -58,7 +58,9 @@ async function serveOut() {
   const server = createServer(async (req, res) => {
     let file = path.join("out", decodeURIComponent(new URL(req.url, LOCAL).pathname));
     try {
-      if ((await stat(file)).isDirectory()) file = path.join(file, "index.html");
+      // Same resolution as the hosts: /about -> about.html, / -> index.html.
+      const isFile = await stat(file).then((s) => s.isFile(), () => false);
+      if (!isFile) file = file === "out" || file === "out/" ? "out/index.html" : `${file.replace(/\/$/, "")}.html`;
       const body = await readFile(file);
       res.writeHead(200, { "content-type": types[path.extname(file)] || "application/octet-stream" });
       res.end(body);

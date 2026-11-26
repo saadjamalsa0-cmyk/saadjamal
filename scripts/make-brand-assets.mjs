@@ -95,7 +95,7 @@ const badge = await sharp({ create: { width: 190, height: 190, channels: 3, back
   .png()
   .toBuffer();
 const bar = Buffer.from('<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg"><rect y="612" width="1200" height="18" fill="#8f0f2c"/></svg>');
-for (const slug of ["scaffolders-supply", "welder-supply", "manpower-supply", "equipment-rental"]) {
+for (const slug of ["scaffolders-supply", "welder-supply", "manpower-supply"]) {
   await sharp(`public/images/services/${slug}.jpg`)
     .resize(1200, 630, { fit: "cover", position: "attention" })
     .composite([{ input: bar, top: 0, left: 0 }, { input: badge, top: 390, left: 40 }])

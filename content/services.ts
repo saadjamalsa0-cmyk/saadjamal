@@ -1,6 +1,6 @@
 import type { Bi } from "@/lib/i18n";
 
-export type ServiceIcon = "scaffold" | "welder" | "users" | "tractor";
+export type ServiceIcon = "scaffold" | "welder" | "users";
 
 export type Service = {
   slug: string;
@@ -17,7 +17,7 @@ export type Service = {
   faqs: Bi<{ q: string; a: string }[]>;
 };
 
-/** The four services — same business model as the company brochure. */
+/** The three services — same business model as the company brochure. */
 export const services: Service[] = [
   {
     slug: "scaffolders-supply",
@@ -178,60 +178,6 @@ export const services: Service[] = [
         {
           q: "How long can the manpower be supplied for?",
           a: "Temporarily or for the length of your project.",
-        },
-      ],
-    },
-  },
-  {
-    slug: "equipment-rental",
-    icon: "tractor",
-    image: "/images/services/equipment-rental.jpg",
-    name: { ar: "تأجير المعدات", en: "Equipment Rental" },
-    short: {
-      ar: "معدات وأدوات لأعمال البناء والمهام الصناعية، ويُؤكَّد توفرها في عرض السعر.",
-      en: "Equipment and tools for construction and industrial tasks, with availability confirmed in the quotation.",
-    },
-    intro: {
-      ar: "نؤجر معدات وأدوات لأعمال البناء والمهام الصناعية. أخبرنا بنوع المعدة وقدرتها ومدة الإيجار وموقع العمل، ونؤكد التوفر وحالة المعدة والمشغل في عرض السعر.",
-      en: "We rent equipment and tools for construction and industrial work. Tell us the type, capacity, rental period and site, and we confirm availability, condition and operator in the quotation.",
-    },
-    includes: {
-      ar: [
-        "معدات الحفر والتسوية والدك",
-        "الرافعات والمعدات الثقيلة",
-        "معدات النقل والتحميل",
-        "أدوات وعدد البناء",
-        "توفير مشغلين عند الحاجة",
-        "إيجار يومي أو أسبوعي أو شهري",
-      ],
-      en: [
-        "Excavation, grading and compaction equipment",
-        "Cranes and heavy equipment",
-        "Transport and loading equipment",
-        "Construction tools and equipment",
-        "Operators supplied when required",
-        "Daily, weekly or monthly rental",
-      ],
-    },
-    faqs: {
-      ar: [
-        {
-          q: "هل يشمل الإيجار مشغلًا؟",
-          a: "يمكن التأجير مع مشغل أو بدونه بحسب طلبك، وتُوضَّح التفاصيل في عرض السعر.",
-        },
-        {
-          q: "ما مدة الإيجار المتاحة؟",
-          a: "يمكن الإيجار بنظام يومي أو أسبوعي أو شهري، أو بحسب مدة المشروع.",
-        },
-      ],
-      en: [
-        {
-          q: "Does the rental include an operator?",
-          a: "Equipment can be rented with or without an operator as you prefer, and the details are stated in the quotation.",
-        },
-        {
-          q: "What rental periods are available?",
-          a: "Daily, weekly or monthly, or to match the length of your project.",
         },
       ],
     },

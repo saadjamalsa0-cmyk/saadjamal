@@ -8,12 +8,12 @@ Bilingual (Arabic default, English at `/en`), fully static (plain HTML — hosts
 
 | Arabic URL | English URL | Purpose |
 | --- | --- | --- |
-| `/` | `/en/` | Home: hero, trust strip, about, services, process, why us, who we serve, FAQ, CTA |
-| `/about/` | `/en/about/` | Story, mission & vision, values, CR registration details |
-| `/services/` | `/en/services/` | The 4 services |
-| `/services/<slug>/` | `/en/services/<slug>/` | One page per service (own SEO title, FAQ, schema) |
-| `/contact/` | `/en/contact/` | Contact details + quotation form (opens WhatsApp / email) |
-| `/privacy-policy/` | `/en/privacy-policy/` | Privacy policy (not in sitemap, `noindex`) |
+| `/` | `/en` | Home: hero, trust strip, about, services, process, why us, who we serve, FAQ, CTA |
+| `/about` | `/en/about` | Story, mission & vision, values, CR registration details |
+| `/services` | `/en/services` | The 4 services |
+| `/services/<slug>` | `/en/services/<slug>` | One page per service (own SEO title, FAQ, schema) |
+| `/contact` | `/en/contact` | Contact details + quotation form (opens WhatsApp / email) |
+| `/privacy-policy` | `/en/privacy-policy` | Privacy policy (not in sitemap, `noindex`) |
 
 No city pages, no blog, no CMS — by design.
 
@@ -28,28 +28,29 @@ pnpm build          # writes the finished site to ./out
 ## Before launch
 
 1. Confirm `info@saadjamal.sa` exists and receives mail, and the opening hours in `config/company.ts`.
-2. Confirm the scaffolding systems and rental equipment types described in `content/` are really offered.
+2. Confirm the scaffolding systems and trades described in `content/` are really offered.
 3. Replace illustrative pictures with your own site photos when you have them (see `IMAGE_PROMPTS.md`).
 
 ## Where things live
 
+Same organisation as gulforbit.sa; see `CLAUDE.md`.
+
 | To change… | Edit |
 | --- | --- |
 | Company name, CR, phone, email, address, hours | `config/company.ts` |
-| Service names, descriptions, bullet lists, FAQs | `content/services.ts` |
-| Home / About / Contact text, FAQ, process, values | `content/site.ts` |
-| Page titles and meta descriptions (Google snippets) | `lib/seo.ts` → `metaText` |
-| Colours | `tailwind.config.ts` (`crimson` = logo red, `ink` = black) |
+| Page text, titles and meta descriptions | `messages/ar.json` and `messages/en.json` |
+| Services, service-page content, trades | `content/` |
+| Pages | `app/[locale]/` |
+| Headers and redirects | `config/site-routing.mjs` |
+| Colours | `tailwind.config.ts` |
 | Images | `IMAGE_PROMPTS.md` + `pnpm images:optimize` |
-
-Every text is written once as `{ ar: "…", en: "…" }`, so the two languages can't drift apart.
 
 ## Deploy
 
-`pnpm build` creates the `out/` folder — that **is** the website.
+`pnpm build` creates `out/`, which is the website.
 
-- **cPanel / Apache:** upload the *contents* of `out/` to `public_html` (the included `.htaccess` forces HTTPS, redirects `www` → `saadjamal.sa`, adds caching and security headers).
-- **Cloudflare Pages / Netlify / Vercel:** build command `pnpm build`, output directory `out`.
+- **Cloudflare (as gulforbit.sa):** `npx wrangler deploy` (see `wrangler.toml`).
+- **cPanel / Apache:** upload the contents of `out/`, including the generated `.htaccess`.
 
 ## SEO system (same method as gulforbit.sa)
 

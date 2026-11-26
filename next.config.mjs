@@ -1,10 +1,11 @@
+import createNextIntlPlugin from "next-intl/plugin";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants.js";
+import { siteHeaders } from "./config/site-routing.mjs";
+
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Fully static site: `pnpm build` writes plain HTML to ./out, which can be
-  // uploaded to any host (cPanel, Cloudflare Pages, Netlify, S3 ...).
-  output: "export",
-  // /about/ -> about/index.html, which works on every static host.
-  trailingSlash: true,
   images: {
     // Static hosting has no image optimiser: scripts/finalize-export.mjs creates the WebP files.
     loader: "custom",
@@ -14,9 +15,25 @@ const nextConfig = {
   },
   poweredByHeader: false,
   reactStrictMode: true,
-  experimental: {
-    globalNotFound: true,
-  },
+  trailingSlash: false,
 };
 
-export default nextConfig;
+// Production is a static export (out/). The dev server applies the same headers and maps
+// unprefixed paths to the Arabic pages, the way the export's file layout does.
+export default function config(phase) {
+  if (phase !== PHASE_DEVELOPMENT_SERVER) {
+    return withNextIntl({ ...nextConfig, output: "export" });
+  }
+  return withNextIntl({
+    ...nextConfig,
+    headers: async () => siteHeaders(true),
+    rewrites: async () => ({
+      afterFiles: [],
+      beforeFiles: [
+        { source: "/", destination: "/ar" },
+        { source: "/:path((?!ar$|ar/|en$|en/|_next/|images/|icons/|fonts/|og/|.*\\..*).*)", destination: "/ar/:path" },
+      ],
+      fallback: [],
+    }),
+  });
+}

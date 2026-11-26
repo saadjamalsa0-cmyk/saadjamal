@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/seo";
+import { SEO_CONFIG } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
@@ -22,7 +22,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "*", allow: "/" },
       ...aiAgents.map((userAgent) => ({ userAgent, allow: "/" })),
     ],
-    sitemap: `${SITE_URL}/sitemap.xml`,
-    host: SITE_URL,
+    sitemap: `${SEO_CONFIG.siteUrl}/sitemap.xml`,
+    host: SEO_CONFIG.siteUrl,
   };
 }
