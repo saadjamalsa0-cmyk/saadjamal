@@ -3,7 +3,7 @@
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Mail, WhatsAppIcon } from "@/components/ui/icons";
-import { mailHref, whatsAppHref } from "@/config/company";
+import { whatsAppHref } from "@/config/company";
 
 const field =
   "w-full border border-ink-200 bg-white px-4 py-3.5 text-ink-900 placeholder:text-ink-400 transition-colors focus:border-crimson-700 focus:outline-none focus:ring-2 focus:ring-crimson-700/20";
@@ -19,13 +19,13 @@ type ContactCopy = {
   labels: Record<"name" | "phone" | "service" | "location" | "details", string>;
 };
 
-/** Needs no server: builds a ready-to-send message and opens WhatsApp or the email app. */
+/** Emails the request through /api/contact (Resend). WhatsApp stays as the second way to send. */
 export default function ContactForm({ services, defaultService = "" }: Props) {
   const locale = useLocale();
   const t = useTranslations("contactPage");
-  const common = useTranslations("common");
   const c = useMessages().contactPage as unknown as ContactCopy;
-  const [error, setError] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [error, setError] = useState<"required" | "invalidEmail" | "failed" | null>(null);
   const serviceRef = useRef<HTMLSelectElement>(null);
 
   // Arriving with ?service=slug pre-selects it.
@@ -34,44 +34,70 @@ export default function ContactForm({ services, defaultService = "" }: Props) {
     if (slug && serviceRef.current && services.some((s) => s.slug === slug)) serviceRef.current.value = slug;
   }, [services]);
 
-  function build(form: HTMLFormElement) {
+  function read(form: HTMLFormElement) {
     const d = new FormData(form);
     const get = (k: string) => String(d.get(k) ?? "").trim();
     const service = services.find((s) => s.slug === get("service"));
+    return {
+      name: get("name"),
+      phone: get("phone"),
+      email: get("email"),
+      service: service?.name ?? c.fields.other,
+      location: get("location"),
+      message: get("message"),
+      company_website: get("company_website"),
+      locale,
+    };
+  }
+
+  const complete = (data: ReturnType<typeof read>) => Boolean(data.name && data.phone && data.message);
+
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = read(form);
+    if (!complete(data)) return setError("required");
+    setError(null);
+    setStatus("sending");
+    try {
+      const response = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) {
+        setStatus("idle");
+        return setError(result.code === "invalid-email" ? "invalidEmail" : "failed");
+      }
+      form.reset();
+      setStatus("sent");
+      (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag?.("event", "generate_lead", { page_path: location.pathname });
+    } catch {
+      setStatus("idle");
+      setError("failed");
+    }
+  }
+
+  function onWhatsApp(form: HTMLFormElement | null) {
+    if (!form) return;
+    const data = read(form);
+    if (!complete(data)) return setError("required");
+    setError(null);
     const lines = [
       t("waGreeting"),
       "",
-      `${c.labels.name}: ${get("name")}`,
-      `${c.labels.phone}: ${get("phone")}`,
-      get("email") ? `Email: ${get("email")}` : null,
-      `${c.labels.service}: ${service?.name ?? c.fields.other}`,
-      get("location") ? `${c.labels.location}: ${get("location")}` : null,
+      `${c.labels.name}: ${data.name}`,
+      `${c.labels.phone}: ${data.phone}`,
+      data.email ? `Email: ${data.email}` : null,
+      `${c.labels.service}: ${data.service}`,
+      data.location ? `${c.labels.location}: ${data.location}` : null,
       "",
       `${c.labels.details}:`,
-      get("message"),
+      data.message,
     ].filter((l): l is string => l !== null);
-    return { text: lines.join("\n"), valid: Boolean(get("name") && get("phone") && get("message")) };
-  }
-
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const { text, valid } = build(e.currentTarget);
-    if (!valid) return setError(true);
-    setError(false);
-    window.open(whatsAppHref(text), "_blank", "noopener,noreferrer");
-  }
-
-  function onEmail(form: HTMLFormElement | null) {
-    if (!form) return;
-    const { text, valid } = build(form);
-    if (!valid) return setError(true);
-    setError(false);
-    window.location.href = `${mailHref}?subject=${encodeURIComponent(common("quoteSubject"))}&body=${encodeURIComponent(text)}`;
+    window.open(whatsAppHref(lines.join("\n")), "_blank", "noopener,noreferrer");
   }
 
   const label = "mb-2 block text-sm font-semibold text-ink-900";
   return (
-    <form onSubmit={onSubmit} noValidate className="space-y-5" id="quote-form" data-locale={locale}>
+    <form onSubmit={onSubmit} noValidate className="relative space-y-5 overflow-hidden" id="quote-form" data-locale={locale}>
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="block">
           <span className={label}>{c.fields.name} *</span>
@@ -109,20 +135,28 @@ export default function ContactForm({ services, defaultService = "" }: Props) {
         <textarea name="message" rows={5} required placeholder={c.fields.messagePlaceholder} className={`${field} resize-y`} />
       </label>
 
+      {/* Honeypot: hidden from people, filled by bots. */}
+      <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute -left-[9999px] h-0 w-0" />
+
       {error && (
         <p role="alert" className="border-s-4 border-crimson-700 bg-crimson-50 px-4 py-3 text-sm font-medium text-crimson-800">
-          {t("required")}
+          {t(error)}
+        </p>
+      )}
+      {status === "sent" && (
+        <p role="status" className="border-s-4 border-emerald-600 bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-800">
+          {t("success")}
         </p>
       )}
 
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" disabled={status === "sending"} className="btn btn-primary disabled:opacity-60">
+          <Mail className="h-[18px] w-[18px]" aria-hidden="true" />
+          {status === "sending" ? t("sending") : t("sendMessage")}
+        </button>
+        <button type="button" onClick={(e) => onWhatsApp(e.currentTarget.form)} className="btn btn-outline">
           <WhatsAppIcon className="h-[18px] w-[18px]" />
           {t("sendWhatsapp")}
-        </button>
-        <button type="button" onClick={(e) => onEmail(e.currentTarget.form)} className="btn btn-outline">
-          <Mail className="h-[18px] w-[18px]" aria-hidden="true" />
-          {t("sendEmail")}
         </button>
       </div>
       <p className="text-sm text-ink-500">{t("privacyNote")}</p>

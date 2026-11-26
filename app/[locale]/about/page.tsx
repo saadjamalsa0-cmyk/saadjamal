@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import CoreValues from "@/components/about/core-values";
 import MissionVision from "@/components/about/mission-vision";
 import OurStory from "@/components/about/our-story";
-import Registration from "@/components/about/registration";
 import CallToAction from "@/components/call-to-action";
 import HomeProcess from "@/components/home/home-process";
 import EntitySchema from "@/components/schema/entity-schema";
@@ -32,7 +31,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <OurStory />
       <MissionVision />
       <CoreValues />
-      <Registration />
       <HomeProcess />
       <CallToAction />
 

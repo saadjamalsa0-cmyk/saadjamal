@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import { Check, ForwardArrow, Icon, MapPin, WhatsAppIcon } from "@/components/ui/icons";
-import { COMPANY, whatsAppHref } from "@/config/company";
-import type { Locale } from "@/config/i18n";
+import { Check, ForwardArrow, Icon, WhatsAppIcon } from "@/components/ui/icons";
+import { whatsAppHref } from "@/config/company";
 import { getLocalizedPath } from "@/lib/seo";
 
 /** Light, layered hero. Server-rendered: it holds the LCP element. */
 export default function Hero() {
-  const locale = useLocale() as Locale;
+  const locale = useLocale();
   const t = useTranslations();
   const badges = t.raw("hero.badges") as string[];
   return (
@@ -18,13 +17,7 @@ export default function Hero() {
 
       <div className="container grid items-center gap-10 pb-28 pt-10 sm:pt-14 lg:grid-cols-12 lg:gap-8 lg:pb-36 lg:pt-16">
         <div className="lg:col-span-7">
-          <p className="inline-flex flex-wrap items-center gap-3 border border-ink-200 bg-white py-1.5 pe-4 ps-1.5 text-xs font-semibold text-ink-700 shadow-sm sm:text-sm">
-            <span className="bg-crimson-700 px-2.5 py-1 text-white">{t("common.crActive")}</span>
-            <span dir="ltr" className="tracking-wide">
-              {COMPANY.cr}
-            </span>
-          </p>
-          <p className="eyebrow mt-7 flex">{t("hero.eyebrow")}</p>
+          <p className="eyebrow flex">{t("hero.eyebrow")}</p>
           <h1 className="mt-4 text-[2.05rem] font-bold leading-[1.18] sm:text-5xl lg:text-[3.75rem]">
             {t("hero.titleA")}
             <span className="mt-2 block text-crimson-700">{t("hero.titleB")}</span>
@@ -69,15 +62,16 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute start-0 top-6 z-20 flex items-center gap-3 border border-ink-100 bg-white/95 p-3 pe-5 shadow-lift backdrop-blur sm:-start-4">
-            <span className="flex h-10 w-10 items-center justify-center bg-crimson-50 text-crimson-700">
-              <MapPin className="h-5 w-5" aria-hidden="true" />
+          <Link
+            href={getLocalizedPath(locale, "about")}
+            className="group absolute start-0 top-6 z-20 flex items-center gap-3 border border-ink-100 bg-white/95 p-3 pe-5 shadow-lift backdrop-blur transition-colors hover:border-crimson-700 sm:-start-4"
+          >
+            <span className="flex h-10 w-10 items-center justify-center bg-crimson-700 text-white">
+              <Icon name="users" className="h-5 w-5" />
             </span>
-            <span className="leading-tight">
-              <span className="block text-xs font-semibold text-ink-500">{t("common.office")}</span>
-              <span className="block font-bold text-ink-950">{COMPANY.address.cityText[locale]}</span>
-            </span>
-          </div>
+            <span className="font-bold text-ink-950">{t("aboutPage.title")}</span>
+            <ForwardArrow className="h-4 w-4 text-crimson-700" />
+          </Link>
           <Link
             href={getLocalizedPath(locale, "services")}
             className="group absolute bottom-8 end-0 z-20 flex items-center gap-3 border border-ink-100 bg-white/95 p-3 pe-5 shadow-lift backdrop-blur transition-colors hover:border-crimson-700 sm:-end-3"

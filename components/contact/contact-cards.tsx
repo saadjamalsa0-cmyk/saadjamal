@@ -1,5 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
-import { Clock, Icon, Mail, MapPin, Phone, WhatsAppIcon } from "@/components/ui/icons";
+import { Clock, Mail, MapPin, Phone, WhatsAppIcon } from "@/components/ui/icons";
 import { COMPANY, mailHref, telHref, whatsAppHref } from "@/config/company";
 import type { Locale } from "@/config/i18n";
 
@@ -37,15 +37,6 @@ export default function ContactCards() {
     },
     { label: t("hours"), icon: <Clock className="h-6 w-6" aria-hidden="true" />, node: <span className="font-bold text-ink-950">{COMPANY.hours.display[locale]}</span> },
     { label: t("address"), icon: <MapPin className="h-6 w-6" aria-hidden="true" />, node: <span className="font-bold text-ink-950">{COMPANY.address.display[locale]}</span> },
-    {
-      label: t("cr"),
-      icon: <Icon name="badge" className="h-6 w-6" />,
-      node: (
-        <p dir="ltr" className="font-bold text-ink-950 rtl:text-end">
-          {COMPANY.cr}
-        </p>
-      ),
-    },
   ];
   return (
     <ul className="card mt-8 divide-y divide-ink-100">

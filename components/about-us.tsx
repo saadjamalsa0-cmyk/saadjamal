@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { Check, ForwardArrow } from "@/components/ui/icons";
-import { COMPANY } from "@/config/company";
 import { getLocalizedPath } from "@/lib/seo";
 
 /** About block on the home page. */
@@ -22,14 +21,6 @@ export default function AboutUs() {
           <div className="absolute bottom-0 end-0 w-[56%] border-8 border-white bg-stone-100 shadow-lift">
             <div className="relative aspect-[4/3]">
               <Image src="/images/about-2.jpg" alt={t("aboutHome.imageAlt2")} fill sizes="320px" className="object-cover" />
-            </div>
-          </div>
-          <div className="absolute end-0 top-10 -skew-x-[8deg] bg-crimson-700 px-6 py-5 text-white shadow-lift">
-            <div className="skew-x-[8deg]">
-              <p className="text-xs font-semibold text-white/85">{t("common.crShort")}</p>
-              <p dir="ltr" className="mt-1 text-2xl font-bold tracking-wide">
-                {COMPANY.cr}
-              </p>
             </div>
           </div>
         </div>

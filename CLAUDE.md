@@ -8,6 +8,7 @@ Organised the same way as gulforbit.sa (`../gulf-orbit`).
 - `content/` services, service-page depth and trades (typed, bilingual).
 - `config/company.ts` the only place for name, CR, phone, email, address, hours.
 - `config/site-routing.mjs` headers and redirects.
+- `worker/`, `server/api/`, `lib/email.ts` contact form email through Resend. Secrets only via `wrangler secret` or `.dev.vars`.
 - `components/` page blocks; `components/{home,about,services,contact,conversion,schema,ui}/`.
 - `lib/seo/` URLs, hreflang, metadata, entity ids.
 - `scripts/` export finishing, SEO crawl gate, banned claims, content dates, IndexNow, images.

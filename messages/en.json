@@ -6,7 +6,7 @@
     },
     "about": {
       "title": "About Us | Saad Jamal Contracting, Dammam",
-      "description": "About Saad Jamal Al-Asmari Contracting Establishment, CR 7055602549, in Dammam: scaffolder, welder and manpower supply for projects in Saudi Arabia."
+      "description": "About Saad Jamal Al-Asmari Contracting Establishment in Dammam: scaffolder, welder, and skilled and general manpower supply for projects in Saudi Arabia."
     },
     "services": {
       "title": "Scaffolder, Welder & Manpower Supply | Saad Jamal",
@@ -52,7 +52,7 @@
   },
   "aboutPage": {
     "title": "About Us",
-    "lead": "Saad Jamal Al-Asmari Contracting Establishment is a Saudi establishment, Commercial Registration 7055602549, based in Dammam, supplying scaffolders, welders and manpower.",
+    "lead": "Saad Jamal Al-Asmari Contracting Establishment, based in Dammam, supplies scaffolders, welders and general and specialized manpower.",
     "storyTitle": "About our company",
     "story": [
       "At Saad Jamal Contracting we focus on specialist manpower, scaffolders above all, together with welders and general and specialist workers.",
@@ -86,27 +86,6 @@
     "mission": "To deliver skilled manpower to projects in Saudi Arabia, with a special focus on scaffolders, supporting efficient work, worker safety and client satisfaction, and to build lasting partnerships through transparency, quality management and keeping agreed dates.",
     "visionTitle": "Our vision",
     "vision": "To be a supplier clients can rely on for specialist labour, scaffolders above all, in construction and infrastructure, with organised, sustainable practices that support project success and national development goals.",
-    "regTitle": "Registration details",
-    "regText": "We are open about our official details. These are the Commercial Registration details as shown on the Ministry of Commerce certificate.",
-    "regRows": [
-      {
-        "label": "Registered name"
-      },
-      {
-        "label": "Unified national number"
-      },
-      {
-        "label": "Issue date"
-      },
-      {
-        "label": "Entity type"
-      },
-      {
-        "label": "Registration status"
-      }
-    ],
-    "statusActive": "Active",
-    "verify": "Verify via the Ministry of Commerce",
     "imageAlt": "Three workers in helmets and safety harnesses reviewing a checklist beside a steel scaffold on a building site"
   },
   "audience": {
@@ -144,9 +123,8 @@
     "email": "Email",
     "hours": "Working hours",
     "address": "Address",
-    "cr": "Commercial Registration",
     "formTitle": "Send us your project details",
-    "formText": "Fill in the form and WhatsApp opens with a ready-to-send message, or send it by email instead.",
+    "formText": "Fill in the form and your request reaches us by email, or send it on WhatsApp.",
     "fields": {
       "name": "Full name",
       "phone": "Mobile number",
@@ -159,9 +137,8 @@
       "select": "Choose a service"
     },
     "sendWhatsapp": "Send via WhatsApp",
-    "sendEmail": "Or send by email",
     "required": "Please fill in your name, mobile number and project details.",
-    "privacyNote": "Your details are not stored on this website; they are sent straight to WhatsApp or your email app.",
+    "privacyNote": "We use your details only to answer your request; they reach us by email through the Resend service.",
     "waGreeting": "Hello, I would like to request a quotation.",
     "labels": {
       "name": "Name",
@@ -170,7 +147,12 @@
       "location": "Location",
       "details": "Details"
     },
-    "notYetAddress": "Address coming soon"
+    "notYetAddress": "Address coming soon",
+    "sendMessage": "Send request",
+    "sending": "Sending…",
+    "success": "Your request has been sent. We will get in touch.",
+    "failed": "The message could not be sent. Please try again later, or reach us on WhatsApp or by phone.",
+    "invalidEmail": "Please enter a valid email address, or leave it empty."
   },
   "cta": {
     "title": "Have a project? Let's start with a conversation",
@@ -197,10 +179,6 @@
         "a": "Temporary or for the length of the project. State the expected duration and start date in your request and they are fixed in the quotation."
       },
       {
-        "q": "Is the company officially registered?",
-        "a": "Yes. Saad Jamal Al-Asmari Contracting Establishment holds Commercial Registration No. 7055602549 issued by the Ministry of Commerce, and the registration is active. You can verify it through the Ministry of Commerce platform."
-      },
-      {
         "q": "Do you serve only specific cities?",
         "a": "We serve projects across Saudi Arabia, and our office is in Dammam."
       }
@@ -210,16 +188,14 @@
     "about": "Saad Jamal Al-Asmari Contracting Establishment: scaffolders, welders and specialized manpower for construction and industrial projects across Saudi Arabia.",
     "quickLinks": "Quick links",
     "services": "Services",
-    "contact": "Contact",
-    "registered": "Commercial Reg. No."
+    "contact": "Contact"
   },
   "hero": {
     "eyebrow": "Scaffolders · Welders · Specialized manpower",
     "titleA": "Scaffolders & specialized manpower",
     "titleB": "for projects across Saudi Arabia",
-    "text": "Saad Jamal Al-Asmari Contracting Establishment (CR 7055602549) supplies scaffolders, welders and general and specialized workers for construction, maintenance and industrial projects across Saudi Arabia, from its office in Dammam.",
+    "text": "Saad Jamal Al-Asmari Contracting Establishment supplies scaffolders, welders and general and specialized workers for construction, maintenance and industrial projects across Saudi Arabia, from its office in Dammam.",
     "badges": [
-      "Active commercial registration",
       "Written quotation for every request",
       "Temporary or project-length supply"
     ]
@@ -253,11 +229,11 @@
     "sections": [
       {
         "h": "Who we are",
-        "p": "This website (saadjamal.sa) is operated by Saad Jamal Al-Asmari Contracting Establishment, Commercial Registration No. 7055602549."
+        "p": "This website (saadjamal.sa) is operated by Saad Jamal Al-Asmari Contracting Establishment."
       },
       {
         "h": "What we collect",
-        "p": "This website does not store form data on our servers. When you use the contact form, a message is prepared for WhatsApp or your email app and reaches us only when you send it. The site may use strictly necessary cookies or anonymous analytics if we enable them in future."
+        "p": "When you submit the contact form, your details are sent to the website server and then to our inbox through the email provider Resend so we can handle your request. We do not store them in a database on the website. If you choose WhatsApp, the message is sent directly from your app. The site may use strictly necessary cookies, or analytics if we enable them in future."
       },
       {
         "h": "How we use your data",
@@ -312,11 +288,6 @@
   },
   "trust": {
     "items": [
-      {
-        "icon": "badge",
-        "title": "Officially registered",
-        "text": "Active Commercial Registration, Ministry of Commerce"
-      },
       {
         "icon": "hardhat",
         "title": "Crews matched to your scope",
@@ -397,10 +368,7 @@
     "greeting": "Hello, I'd like to ask about your services.",
     "quoteGreeting": "Hello, I'd like to request a quotation.",
     "serviceGreeting": "Hello, I'd like to ask about: {service}",
-    "quoteSubject": "Quotation request",
     "heroImageAlt": "Steel scaffolding tower with working platforms, safety guardrails and access stairs",
-    "crActive": "Active commercial registration",
-    "crShort": "Active CR",
     "whyTrust": "Why trust us",
     "updated": "Updated:",
     "facts": "Facts at a glance",
@@ -408,13 +376,11 @@
     "arrivalChecks": "What to check on arrival",
     "tradesTitle": "Trades you can ask for",
     "tradesNote": "State the trade and number in your request; availability is confirmed in the quotation.",
-    "identityNote": "{name}, Commercial Registration {cr}. {domain} is this establishment's website.",
     "quickActions": "Quick actions",
     "call": "Call",
     "getQuote": "Get a Quote",
     "emailShort": "Email",
     "officeName": "Saad Jamal services",
-    "crName": "Commercial Registration",
     "country": "Saudi Arabia",
     "knowsAbout": [
       "Scaffolder supply",
@@ -422,7 +388,6 @@
       "Manpower supply"
     ],
     "serviceHeading": "{service} in Saudi Arabia",
-    "office": "Head office",
     "talkTitle": "Talk to us directly"
   }
 }

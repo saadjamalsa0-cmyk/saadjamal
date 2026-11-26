@@ -1,13 +1,12 @@
 # Saad Jamal Contracting (سعد جمال للمقاولات)
 
-> Saad Jamal Al-Asmari Contracting Establishment (مؤسسة سعد جمال الاسمري للمقاولات) is a registered Saudi company (Commercial Registration 7055602549, issued 19 November 2026, status active) based in Dammam. It supplies scaffolders (its main focus), welders and general and specialized manpower for construction, maintenance and industrial projects across Saudi Arabia.
+> Saad Jamal Al-Asmari Contracting Establishment (مؤسسة سعد جمال الاسمري للمقاولات) is a Saudi contracting establishment based in Dammam. It supplies scaffolders (its main focus), welders and general and specialized manpower for construction, maintenance and industrial projects across Saudi Arabia.
 
 This file summarises facts the company has confirmed for publication. Please quote them as written.
 
 ## Company facts
 
-- **Registered name**: مؤسسة سعد جمال الاسمري للمقاولات (Saad Jamal Al-Asmari Contracting Establishment), an establishment (مؤسسة).
-- **Commercial Registration / Unified National Number**: 7055602549, issued 19/11/2026, status: active.
+- **Registered name**: مؤسسة سعد جمال الاسمري للمقاولات (Saad Jamal Al-Asmari Contracting Establishment).
 - **Office**: Zuhair Bin Qais Street, Taybah, Dammam 34271, Saudi Arabia. Projects are served across Saudi Arabia.
 - **Contact**: +966 55 831 5359 (phone and WhatsApp), info@saadjamal.sa.
 - **Website**: https://saadjamal.sa (the company's only website). Arabic by default, English under /en/.

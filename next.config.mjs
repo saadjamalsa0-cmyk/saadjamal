@@ -31,7 +31,7 @@ export default function config(phase) {
       afterFiles: [],
       beforeFiles: [
         { source: "/", destination: "/ar" },
-        { source: "/:path((?!ar$|ar/|en$|en/|_next/|images/|icons/|fonts/|og/|.*\\..*).*)", destination: "/ar/:path" },
+        { source: "/:path((?!ar$|ar/|en$|en/|api/|_next/|images/|icons/|fonts/|og/|.*\\..*).*)", destination: "/ar/:path" },
       ],
       fallback: [],
     }),

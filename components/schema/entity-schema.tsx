@@ -41,8 +41,6 @@ export default function EntitySchema({ locale }: { locale: string }) {
             logo: toAbsoluteUrl("/images/logo.png"),
             image,
             description: t("seo.home.description"),
-            foundingDate: COMPANY.crIssueDate,
-            identifier: { "@type": "PropertyValue", name: t("common.crName"), value: COMPANY.cr },
             areaServed: { "@type": "Country", name: t("common.country") },
             knowsAbout: t.raw("common.knowsAbout"),
             ...(confirmed

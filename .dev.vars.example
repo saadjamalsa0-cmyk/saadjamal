@@ -1,0 +1,2 @@
+# Copy to .dev.vars (not committed) for local testing with `pnpm build && pnpm start`.
+RESEND_API_KEY=

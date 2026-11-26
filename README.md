@@ -45,12 +45,28 @@ Same organisation as gulforbit.sa; see `CLAUDE.md`.
 | Colours | `tailwind.config.ts` |
 | Images | `IMAGE_PROMPTS.md` + `pnpm images:optimize` |
 
+## Contact form email (Resend, as on gulforbit.sa)
+
+The form posts to `/api/contact`, handled by `worker/index.ts` → `server/api/contact.ts` → `lib/email.ts`.
+It emails the enquiry to `info@saadjamal.sa` (and a short acknowledgement to the visitor, if they gave an email).
+
+Setup once:
+
+1. In [resend.com](https://resend.com), add the domain `saadjamal.sa` and create the DNS records it shows.
+2. Create an API key, then store it as a secret (never in a file that is committed):
+   ```bash
+   npx wrangler secret put RESEND_API_KEY
+   ```
+3. Make sure the `info@saadjamal.sa` mailbox exists.
+
+Test locally: copy `.dev.vars.example` to `.dev.vars`, add the key, then `pnpm build && pnpm start`.
+(`pnpm dev` does not run the Worker, so sending fails there.)
+
 ## Deploy
 
-`pnpm build` creates `out/`, which is the website.
+`pnpm build && npx wrangler deploy` (Cloudflare Worker + static files, see `wrangler.toml`).
 
-- **Cloudflare (as gulforbit.sa):** `npx wrangler deploy` (see `wrangler.toml`).
-- **cPanel / Apache:** upload the contents of `out/`, including the generated `.htaccess`.
+The email form **needs Cloudflare**. On cPanel / Apache the pages work but only the WhatsApp button can send.
 
 ## SEO system (same method as gulforbit.sa)
 

@@ -34,12 +34,6 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-6 max-w-sm leading-relaxed">{t("footer.about")}</p>
-            <p className="mt-6 inline-flex items-center gap-2 border-s-4 border-crimson-700 bg-white px-4 py-2.5 text-sm">
-              <span>{t("footer.registered")}</span>
-              <span dir="ltr" className="font-bold text-ink-950">
-                {COMPANY.cr}
-              </span>
-            </p>
           </div>
 
           <div className="lg:col-span-2">
