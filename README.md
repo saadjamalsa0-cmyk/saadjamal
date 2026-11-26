@@ -83,7 +83,7 @@ The email form **needs Cloudflare**. On cPanel / Apache the pages work but only 
 
 ## After launch (SEO checklist)
 
-1. Add the site to **Google Search Console** and **Bing Webmaster Tools**; submit `https://saadjamal.sa/sitemap.xml`.
+1. Add the site to **Google Search Console** and **Bing Webmaster Tools**; submit `https://www.saadjamal.sa/sitemap.xml`.
    Verification codes go in the host's environment variables: `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, `NEXT_PUBLIC_BING_SITE_VERIFICATION`.
 2. Create a **Google Business Profile** (same name, phone and address as `config/company.ts`) — this matters more for local search than anything on the site.
 3. Put the website link on every social profile, then add the profile URLs to `COMPANY.social`.

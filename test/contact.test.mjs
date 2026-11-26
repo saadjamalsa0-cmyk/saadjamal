@@ -5,7 +5,7 @@ import { POST } from "../server/api/contact.ts";
 const env = { RESEND_API_KEY: "re_test_not_a_real_key" };
 let ip = 0;
 const post = (body, headers = {}) =>
-  new Request("https://saadjamal.sa/api/contact", {
+  new Request("https://www.saadjamal.sa/api/contact", {
     method: "POST",
     headers: { "cf-connecting-ip": `10.0.0.${++ip}`, ...headers },
     body: typeof body === "string" ? body : JSON.stringify(body),

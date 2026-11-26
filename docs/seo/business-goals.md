@@ -26,3 +26,5 @@ client names and logos; project history; vehicle fleet.
 - Whether `info@saadjamal.sa` receives mail; the letterhead still shows gulforbit.sa.
 - Resend account: domain verification for saadjamal.sa and the API key secret.
 - Hosting provider (Cloudflare via `wrangler.toml`, or Apache/cPanel via the generated `.htaccess`).
+
+- Official address is https://www.saadjamal.sa (owner, 26 Nov 2026); the bare domain redirects to it.

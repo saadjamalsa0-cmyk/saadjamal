@@ -64,9 +64,9 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://saadjamal.sa/$1 [L,R=301]
-  RewriteCond %{HTTP_HOST} ^www\\.saadjamal\\.sa$ [NC]
-  RewriteRule ^(.*)$ https://saadjamal.sa/$1 [L,R=301]
+  RewriteRule ^(.*)$ https://www.saadjamal.sa/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^saadjamal\\.sa$ [NC]
+  RewriteRule ^(.*)$ https://www.saadjamal.sa/$1 [L,R=301]
 ${siteRedirects.map((r) => `  RewriteRule ^${r.source.slice(1)}$ ${r.destination} [L,R=301]`).join("\n")}
   # /about/ -> /about (the canonical form)
   RewriteRule ^(.+)/$ /$1 [L,R=301]

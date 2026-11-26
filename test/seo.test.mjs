@@ -9,12 +9,12 @@ test("Arabic is served at the root and English under /en, without trailing slash
   assert.equal(getLocalizedPath("ar", "/about/"), "/about");
   assert.equal(getLocalizedPath("en", "services/welder-supply"), "/en/services/welder-supply");
   assert.equal(cleanPath("/en/about?x=1#y"), "about");
-  assert.equal(getLocalizedUrl("ar"), "https://saadjamal.sa");
+  assert.equal(getLocalizedUrl("ar"), "https://www.saadjamal.sa");
 });
 
 test("hreflang covers both languages, both regions and x-default", () => {
   const alternates = getLanguageAlternates("about");
   assert.deepEqual(Object.keys(alternates), ["ar", "ar-SA", "en", "en-SA", "x-default"]);
-  assert.equal(alternates["x-default"], "https://saadjamal.sa/about");
-  assert.equal(alternates.en, "https://saadjamal.sa/en/about");
+  assert.equal(alternates["x-default"], "https://www.saadjamal.sa/about");
+  assert.equal(alternates.en, "https://www.saadjamal.sa/en/about");
 });

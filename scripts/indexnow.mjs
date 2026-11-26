@@ -14,7 +14,7 @@
  * checks it first, because the 403 you get otherwise is easy to misread.
  */
 
-const HOST = process.env.INDEXNOW_HOST || "saadjamal.sa";
+const HOST = process.env.INDEXNOW_HOST || "www.saadjamal.sa";
 const KEY = process.env.INDEXNOW_KEY || "8326f362bedb8c1e90d824eaf2d9b4c2";
 const ORIGIN = `https://${HOST}`;
 const KEY_LOCATION = `${ORIGIN}/${KEY}.txt`;

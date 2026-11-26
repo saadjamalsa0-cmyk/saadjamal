@@ -23,7 +23,7 @@ export const COMPANY = {
     en: "Saad Jamal Al-Asmari Contracting Establishment",
   } as Bi,
 
-  siteUrl: "https://saadjamal.sa",
+  siteUrl: "https://www.saadjamal.sa",
   domain: "saadjamal.sa",
 
   /** Commercial Registration / Unified National Number (from the CR certificate). */

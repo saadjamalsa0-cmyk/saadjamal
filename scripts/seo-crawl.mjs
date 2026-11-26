@@ -2,7 +2,7 @@
  * SEO release gate (from gulforbit.sa): crawl every sitemap URL and fail on regressions.
  *
  *   pnpm build && pnpm seo:crawl                        # serves ./out itself and crawls it
- *   node scripts/seo-crawl.mjs https://saadjamal.sa     # production, after a deploy
+ *   node scripts/seo-crawl.mjs https://www.saadjamal.sa     # production, after a deploy
  *
  * Fails on: non-200, canonical, noindex in sitemap, not exactly one <h1>, title > 60 or missing,
  * description outside 120-155, duplicate titles, lang/dir, reciprocal hreflang, JSON-LD parse,
@@ -16,7 +16,7 @@ import { BANNED_CLAIMS } from "./banned-claims.mjs";
 
 // ---- project settings ---------------------------------------------------------------
 
-const PRODUCTION = process.env.SITE_URL || "https://saadjamal.sa";
+const PRODUCTION = process.env.SITE_URL || "https://www.saadjamal.sa";
 const PORT = 4599;
 const LOCAL = `http://localhost:${PORT}`;
 
