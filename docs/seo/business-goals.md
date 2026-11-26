@@ -14,6 +14,8 @@ and turn the visit into a quotation request (call, WhatsApp, email, form).
 
 Registration details (number, issue date, entity type, status) are not shown on the website (owner, 26 Nov 2026).
 
+Email is the primary contact. No WhatsApp buttons; the phone number is shown in the footer only (owner, 26 Nov 2026).
+
 ## Not published until documented
 Exclusive sponsorship; Saudi Contractors Authority compliance; certified workers; permanent staffing;
 client names and logos; project history; vehicle fleet.

@@ -2,8 +2,7 @@
 
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import { Mail, WhatsAppIcon } from "@/components/ui/icons";
-import { whatsAppHref } from "@/config/company";
+import { Mail } from "@/components/ui/icons";
 
 const field =
   "w-full border border-ink-200 bg-white px-4 py-3.5 text-ink-900 placeholder:text-ink-400 transition-colors focus:border-crimson-700 focus:outline-hidden focus:ring-2 focus:ring-crimson-700/20";
@@ -16,10 +15,9 @@ type Props = {
 
 type ContactCopy = {
   fields: Record<"name" | "phone" | "email" | "service" | "location" | "message" | "messagePlaceholder" | "other" | "select", string>;
-  labels: Record<"name" | "phone" | "service" | "location" | "details", string>;
 };
 
-/** Emails the request through /api/contact (Resend). WhatsApp stays as the second way to send. */
+/** Emails the request through /api/contact (Resend). */
 export default function ContactForm({ services, defaultService = "" }: Props) {
   const locale = useLocale();
   const t = useTranslations("contactPage");
@@ -73,26 +71,6 @@ export default function ContactForm({ services, defaultService = "" }: Props) {
       setStatus("idle");
       setError("failed");
     }
-  }
-
-  function onWhatsApp(form: HTMLFormElement | null) {
-    if (!form) return;
-    const data = read(form);
-    if (!complete(data)) return setError("required");
-    setError(null);
-    const lines = [
-      t("waGreeting"),
-      "",
-      `${c.labels.name}: ${data.name}`,
-      `${c.labels.phone}: ${data.phone}`,
-      data.email ? `Email: ${data.email}` : null,
-      `${c.labels.service}: ${data.service}`,
-      data.location ? `${c.labels.location}: ${data.location}` : null,
-      "",
-      `${c.labels.details}:`,
-      data.message,
-    ].filter((l): l is string => l !== null);
-    window.open(whatsAppHref(lines.join("\n")), "_blank", "noopener,noreferrer");
   }
 
   const label = "mb-2 block text-sm font-semibold text-ink-900";
@@ -150,13 +128,9 @@ export default function ContactForm({ services, defaultService = "" }: Props) {
       )}
 
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-        <button type="submit" disabled={status === "sending"} className="btn btn-primary disabled:opacity-60">
+        <button type="submit" disabled={status === "sending"} className="btn btn-primary w-full disabled:opacity-60 sm:w-auto">
           <Mail className="h-[18px] w-[18px]" aria-hidden="true" />
           {status === "sending" ? t("sending") : t("sendMessage")}
-        </button>
-        <button type="button" onClick={(e) => onWhatsApp(e.currentTarget.form)} className="btn btn-outline">
-          <WhatsAppIcon className="h-[18px] w-[18px]" />
-          {t("sendWhatsapp")}
         </button>
       </div>
       <p className="text-sm text-ink-500">{t("privacyNote")}</p>

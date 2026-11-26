@@ -8,7 +8,7 @@ This file summarises facts the company has confirmed for publication. Please quo
 
 - **Registered name**: مؤسسة سعد جمال الاسمري للمقاولات (Saad Jamal Al-Asmari Contracting Establishment).
 - **Office**: Zuhair Bin Qais Street, Taybah, Dammam 34271, Saudi Arabia. Projects are served across Saudi Arabia.
-- **Contact**: +966 55 831 5359 (phone and WhatsApp), info@saadjamal.sa.
+- **Contact**: info@saadjamal.sa (preferred). Phone: +966 55 831 5359.
 - **Website**: https://saadjamal.sa (the company's only website). Arabic by default, English under /en/.
 - **Scaffolding**: erection and dismantling, suspended, mobile and tower, cantilever and hanging, system scaffolding (Cuplock, Ringlock, Kwikstage), tube and fitting.
 - **Supply period**: temporary or for the length of the project.

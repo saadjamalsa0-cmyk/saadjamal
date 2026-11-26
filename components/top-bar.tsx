@@ -1,7 +1,7 @@
-import { COMPANY, mailHref, telHref } from "@/config/company";
+import { COMPANY, mailHref } from "@/config/company";
 import { useLocale } from "next-intl";
 import type { Locale } from "@/config/i18n";
-import { Clock, Mail, MapPin, Phone } from "@/components/ui/icons";
+import { Clock, Mail, MapPin } from "@/components/ui/icons";
 
 /** Slim contact strip above the header (desktop only). Scrolls away; the header below stays sticky. */
 export default function TopBar() {
@@ -24,12 +24,6 @@ export default function TopBar() {
             <a href={mailHref} className="flex items-center gap-2 transition-colors hover:text-crimson-700">
               <Mail className="h-3.5 w-3.5 text-crimson-700" aria-hidden="true" />
               {COMPANY.email}
-            </a>
-          </li>
-          <li>
-            <a href={telHref} dir="ltr" className="flex items-center gap-2 transition-colors hover:text-crimson-700">
-              <Phone className="h-3.5 w-3.5 text-crimson-700" aria-hidden="true" />
-              {COMPANY.phone}
             </a>
           </li>
         </ul>

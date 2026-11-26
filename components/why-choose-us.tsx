@@ -1,10 +1,13 @@
-import { useTranslations } from "next-intl";
-import { Icon, Phone, WhatsAppIcon } from "@/components/ui/icons";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { ForwardArrow, Icon, Mail } from "@/components/ui/icons";
 import SectionHeading from "@/components/ui/section-heading";
-import { COMPANY, telHref, whatsAppHref } from "@/config/company";
+import { COMPANY, mailHref } from "@/config/company";
+import { getLocalizedPath } from "@/lib/seo";
 
 /** Heading and direct-contact card beside the six reasons. */
 export default function WhyChooseUs() {
+  const locale = useLocale();
   const t = useTranslations();
   const items = t.raw("why.items") as { icon: string; title: string; text: string }[];
   return (
@@ -15,14 +18,14 @@ export default function WhyChooseUs() {
             <SectionHeading eyebrow={t("why.eyebrow")} title={t("why.title")} />
             <div className="mt-8 border border-ink-200 bg-white p-7 shadow-card">
               <p className="font-bold text-ink-950">{t("common.talkTitle")}</p>
-              <a href={telHref} dir="ltr" className="mt-3 flex items-center gap-3 text-2xl font-bold text-crimson-700 rtl:justify-end">
-                <Phone className="h-6 w-6" aria-hidden="true" />
-                {COMPANY.phone}
+              <a href={mailHref} dir="ltr" className="mt-3 flex items-center gap-3 break-all text-xl font-bold text-crimson-700 rtl:justify-end">
+                <Mail className="h-6 w-6 shrink-0" aria-hidden="true" />
+                {COMPANY.email}
               </a>
-              <a href={whatsAppHref(t("common.greeting"))} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-6 w-full">
-                <WhatsAppIcon className="h-[18px] w-[18px]" />
-                {t("ui.whatsapp")}
-              </a>
+              <Link href={getLocalizedPath(locale, "contact")} className="btn btn-primary mt-6 w-full">
+                {t("ui.requestQuote")}
+                <ForwardArrow className="h-4 w-4" />
+              </Link>
             </div>
           </div>
         </div>

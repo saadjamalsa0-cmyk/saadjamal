@@ -14,7 +14,7 @@
     },
     "contact": {
       "title": "Contact Us & Request a Quote | Saad Jamal Contracting",
-      "description": "Call or WhatsApp +966 55 831 5359, or email Saad Jamal Contracting in Dammam, for a written quotation on scaffolders, welders or manpower."
+      "description": "Email Saad Jamal Contracting in Dammam at info@saadjamal.sa, or use the form, for a written quotation on scaffolders, welders or manpower."
     },
     "privacy": {
       "title": "Privacy Policy | Saad Jamal Contracting",
@@ -118,13 +118,11 @@
     "title": "Contact Us",
     "lead": "Tell us about your project. We will review the details and come back with the next steps and a written quotation.",
     "cardsTitle": "Get in touch",
-    "phone": "Phone",
-    "whatsapp": "WhatsApp",
     "email": "Email",
     "hours": "Working hours",
     "address": "Address",
     "formTitle": "Send us your project details",
-    "formText": "Fill in the form and your request reaches us by email, or send it on WhatsApp.",
+    "formText": "Fill in the form and your request reaches us by email.",
     "fields": {
       "name": "Full name",
       "phone": "Mobile number",
@@ -136,22 +134,13 @@
       "other": "Other / not sure",
       "select": "Choose a service"
     },
-    "sendWhatsapp": "Send via WhatsApp",
     "required": "Please fill in your name, mobile number and project details.",
     "privacyNote": "We use your details only to answer your request; they reach us by email through the Resend service.",
-    "waGreeting": "Hello, I would like to request a quotation.",
-    "labels": {
-      "name": "Name",
-      "phone": "Mobile",
-      "service": "Service",
-      "location": "Location",
-      "details": "Details"
-    },
     "notYetAddress": "Address coming soon",
     "sendMessage": "Send request",
     "sending": "Sending…",
     "success": "Your request has been sent. We will get in touch.",
-    "failed": "The message could not be sent. Please try again later, or reach us on WhatsApp or by phone.",
+    "failed": "The message could not be sent. Please try again later, or email us at info@saadjamal.sa.",
     "invalidEmail": "Please enter a valid email address, or leave it empty."
   },
   "cta": {
@@ -172,7 +161,7 @@
       },
       {
         "q": "How do I get a quotation?",
-        "a": "Contact us through the form, WhatsApp or phone and tell us the trades, numbers, duration and project location. We review the request and send a written quotation."
+        "a": "Contact us through the form or email info@saadjamal.sa, and tell us the trades, numbers, duration and project location. We review the request and send a written quotation."
       },
       {
         "q": "How long can you supply workers for?",
@@ -233,7 +222,7 @@
       },
       {
         "h": "What we collect",
-        "p": "When you submit the contact form, your details are sent to the website server and then to our inbox through the email provider Resend so we can handle your request. We do not store them in a database on the website. If you choose WhatsApp, the message is sent directly from your app. The site may use strictly necessary cookies, or analytics if we enable them in future."
+        "p": "When you submit the contact form, your details are sent to the website server and then to our inbox through the email provider Resend so we can handle your request. We do not store them in a database on the website. The site may use strictly necessary cookies, or analytics if we enable them in future."
       },
       {
         "h": "How we use your data",
@@ -307,8 +296,6 @@
   },
   "ui": {
     "requestQuote": "Request a Quote",
-    "whatsapp": "Chat on WhatsApp",
-    "callUs": "Call us",
     "learnMore": "Learn more",
     "viewAllServices": "View all services",
     "readMore": "Service details",
@@ -323,7 +310,8 @@
     "whatWeDo": "What we do",
     "whatsIncluded": "What the service covers",
     "relatedServices": "Other services you may need",
-    "faqTitle": "Frequently asked questions"
+    "faqTitle": "Frequently asked questions",
+    "emailUs": "Email us"
   },
   "why": {
     "eyebrow": "Why Saad Jamal",
@@ -365,9 +353,6 @@
     "brandSuffix": "Contracting",
     "navLabel": "Main navigation",
     "menuLabel": "Menu",
-    "greeting": "Hello, I'd like to ask about your services.",
-    "quoteGreeting": "Hello, I'd like to request a quotation.",
-    "serviceGreeting": "Hello, I'd like to ask about: {service}",
     "heroImageAlt": "Steel scaffolding tower with working platforms, safety guardrails and access stairs",
     "whyTrust": "Why trust us",
     "updated": "Updated:",
@@ -377,7 +362,6 @@
     "tradesTitle": "Trades you can ask for",
     "tradesNote": "State the trade and number in your request; availability is confirmed in the quotation.",
     "quickActions": "Quick actions",
-    "call": "Call",
     "getQuote": "Get a Quote",
     "emailShort": "Email",
     "officeName": "Saad Jamal services",

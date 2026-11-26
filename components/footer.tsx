@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { COMPANY, mailHref, telHref, whatsAppHref } from "@/config/company";
+import { COMPANY, mailHref, telHref } from "@/config/company";
 import { services } from "@/content/services";
 import { useLocale, useTranslations } from "next-intl";
 import { tr } from "@/lib/i18n";
 import type { Locale } from "@/config/i18n";
 import { getLocalizedPath } from "@/lib/seo";
-import { Clock, Mail, MapPin, Phone, WhatsAppIcon } from "@/components/ui/icons";
+import { Clock, Mail, MapPin, Phone } from "@/components/ui/icons";
 
 const heading = "mb-5 text-sm font-bold uppercase tracking-widest text-ink-950 rtl:tracking-normal";
 const link = "inline-block py-2 text-ink-600 transition-colors hover:text-crimson-700";
@@ -71,21 +71,15 @@ export default function Footer() {
             <h2 className={heading}>{t("footer.contact")}</h2>
             <ul className="space-y-1">
               <li className="flex items-start gap-3">
-                <Phone className="mt-3 h-4 w-4 shrink-0 text-crimson-700" aria-hidden="true" />
-                <a href={telHref} dir="ltr" className={`${link} py-2.5 rtl:text-end`}>
-                  {COMPANY.phone}
-                </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <WhatsAppIcon className="mt-3 h-4 w-4 shrink-0 text-crimson-700" />
-                <a href={whatsAppHref()} target="_blank" rel="noopener noreferrer" className={`${link} py-2.5`}>
-                  {t("ui.whatsapp")}
-                </a>
-              </li>
-              <li className="flex items-start gap-3">
                 <Mail className="mt-3 h-4 w-4 shrink-0 text-crimson-700" aria-hidden="true" />
                 <a href={mailHref} className={`${link} break-all py-2.5`}>
                   {COMPANY.email}
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="mt-3 h-4 w-4 shrink-0 text-crimson-700" aria-hidden="true" />
+                <a href={telHref} dir="ltr" className={`${link} py-2.5 rtl:text-end`}>
+                  {COMPANY.phone}
                 </a>
               </li>
               <li className="flex items-start gap-3 py-2">

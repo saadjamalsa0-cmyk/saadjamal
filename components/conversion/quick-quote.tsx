@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import ContactForm from "@/components/contact/contact-form";
-import { Clock, Mail, MapPin, Phone } from "@/components/ui/icons";
-import { COMPANY, mailHref, telHref } from "@/config/company";
+import { Clock, Mail, MapPin } from "@/components/ui/icons";
+import { COMPANY, mailHref } from "@/config/company";
 import type { Locale } from "@/config/i18n";
 import { services } from "@/content/services";
 import { tr } from "@/lib/i18n";
@@ -21,14 +21,6 @@ export default function QuickQuote({ service }: { service?: string }) {
             <h2 className="section-title mt-4">{t("cta.title")}</h2>
             <p className="mt-5 text-lg leading-relaxed text-ink-600">{t("contactPage.formText")}</p>
             <ul className="mt-10 space-y-5 font-bold text-ink-950">
-              <li className={row}>
-                <span className={tile}>
-                  <Phone className="h-5 w-5" aria-hidden="true" />
-                </span>
-                <a href={telHref} dir="ltr" className="self-center hover:text-crimson-700">
-                  {COMPANY.phone}
-                </a>
-              </li>
               <li className={row}>
                 <span className={tile}>
                   <Mail className="h-5 w-5" aria-hidden="true" />

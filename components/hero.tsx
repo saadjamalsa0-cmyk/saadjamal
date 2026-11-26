@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import { Check, ForwardArrow, Icon, WhatsAppIcon } from "@/components/ui/icons";
-import { whatsAppHref } from "@/config/company";
+import { Check, ForwardArrow, Icon, Mail } from "@/components/ui/icons";
+import { mailHref } from "@/config/company";
 import { getLocalizedPath } from "@/lib/seo";
 
 /** Light, layered hero. Server-rendered: it holds the LCP element. */
@@ -29,9 +29,9 @@ export default function Hero() {
               {t("ui.requestQuote")}
               <ForwardArrow className="h-4 w-4" />
             </Link>
-            <a href={whatsAppHref(t("common.greeting"))} target="_blank" rel="noopener noreferrer" className="btn btn-outline px-9! py-4! text-base">
-              <WhatsAppIcon className="h-[18px] w-[18px]" />
-              {t("ui.whatsapp")}
+            <a href={mailHref} className="btn btn-outline px-9! py-4! text-base">
+              <Mail className="h-[18px] w-[18px]" aria-hidden="true" />
+              {t("ui.emailUs")}
             </a>
           </div>
 

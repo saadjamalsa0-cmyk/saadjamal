@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import FaqList from "@/components/ui/faq-list";
-import { Check, ForwardArrow, Icon, Phone, WhatsAppIcon } from "@/components/ui/icons";
+import { Check, ForwardArrow, Icon, Mail } from "@/components/ui/icons";
 import SectionHeading from "@/components/ui/section-heading";
-import { COMPANY, telHref, whatsAppHref } from "@/config/company";
+import { mailHref } from "@/config/company";
 import type { ServiceDetail } from "@/content/service-details";
 import { services, type Service } from "@/content/services";
 import { tradeGroups } from "@/content/trades";
@@ -146,13 +146,9 @@ export default function ServiceBody({ service, detail, faqs }: { service: Servic
                   {t("ui.requestQuote")}
                   <ForwardArrow className="h-4 w-4" />
                 </Link>
-                <a href={whatsAppHref(t("common.serviceGreeting", { service: name }))} target="_blank" rel="noopener noreferrer" className="btn btn-outline w-full">
-                  <WhatsAppIcon className="h-[18px] w-[18px]" />
-                  {t("ui.whatsapp")}
-                </a>
-                <a href={telHref} className="btn btn-outline w-full">
-                  <Phone className="h-4 w-4" aria-hidden="true" />
-                  <span dir="ltr">{COMPANY.phone}</span>
+                <a href={`${mailHref}?subject=${encodeURIComponent(name)}`} className="btn btn-outline w-full">
+                  <Mail className="h-[18px] w-[18px]" aria-hidden="true" />
+                  {t("ui.emailUs")}
                 </a>
               </div>
             </div>

@@ -5,8 +5,8 @@ import Link from "next/link";
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "@/components/language-switcher";
-import { Menu, Phone, X } from "@/components/ui/icons";
-import { COMPANY, telHref } from "@/config/company";
+import { Mail, Menu, X } from "@/components/ui/icons";
+import { COMPANY, mailHref } from "@/config/company";
 import type { Locale } from "@/config/i18n";
 import { usePathname } from "@/i18n/routing";
 import { cleanPath, getLocalizedPath } from "@/lib/seo/urls";
@@ -146,9 +146,9 @@ export default function Navbar({ services }: { services: { slug: string; name: s
             <Link href={href("contact")} className="btn btn-primary w-full">
               {t("ui.requestQuote")}
             </Link>
-            <a href={telHref} className="btn btn-outline w-full">
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              <span dir="ltr">{COMPANY.phone}</span>
+            <a href={mailHref} className="btn btn-outline w-full">
+              <Mail className="h-4 w-4" aria-hidden="true" />
+              <span dir="ltr">{COMPANY.email}</span>
             </a>
           </div>
         </div>

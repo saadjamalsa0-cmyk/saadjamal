@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import { ForwardArrow, WhatsAppIcon } from "@/components/ui/icons";
+import { ForwardArrow, Mail } from "@/components/ui/icons";
 import { Swoosh } from "@/components/ui/swoosh";
-import { whatsAppHref } from "@/config/company";
+import { mailHref } from "@/config/company";
 import { getLocalizedPath } from "@/lib/seo";
 
 /** Closing call-to-action band, the one saturated brand band. */
@@ -24,9 +24,9 @@ export default function CallToAction() {
               {t("ui.requestQuote")}
               <ForwardArrow className="h-4 w-4" />
             </Link>
-            <a href={whatsAppHref(t("common.quoteGreeting"))} target="_blank" rel="noopener noreferrer" className="btn btn-outline-light">
-              <WhatsAppIcon className="h-4 w-4" />
-              {t("ui.whatsapp")}
+            <a href={mailHref} className="btn btn-outline-light">
+              <Mail className="h-4 w-4" aria-hidden="true" />
+              {t("ui.emailUs")}
             </a>
           </div>
         </div>

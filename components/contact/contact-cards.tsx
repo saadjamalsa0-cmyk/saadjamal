@@ -1,6 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
-import { Clock, Mail, MapPin, Phone, WhatsAppIcon } from "@/components/ui/icons";
-import { COMPANY, mailHref, telHref, whatsAppHref } from "@/config/company";
+import { Clock, Mail, MapPin } from "@/components/ui/icons";
+import { COMPANY, mailHref } from "@/config/company";
 import type { Locale } from "@/config/i18n";
 
 export default function ContactCards() {
@@ -8,24 +8,6 @@ export default function ContactCards() {
   const t = useTranslations("contactPage");
   const strong = "font-bold text-ink-950 hover:text-crimson-700";
   const cards = [
-    {
-      label: t("phone"),
-      icon: <Phone className="h-6 w-6" aria-hidden="true" />,
-      node: (
-        <a href={telHref} dir="ltr" className={`${strong} rtl:block rtl:text-end`}>
-          {COMPANY.phone}
-        </a>
-      ),
-    },
-    {
-      label: t("whatsapp"),
-      icon: <WhatsAppIcon className="h-6 w-6" />,
-      node: (
-        <a href={whatsAppHref()} target="_blank" rel="noopener noreferrer" dir="ltr" className={`${strong} rtl:block rtl:text-end`}>
-          {COMPANY.phone}
-        </a>
-      ),
-    },
     {
       label: t("email"),
       icon: <Mail className="h-6 w-6" aria-hidden="true" />,
