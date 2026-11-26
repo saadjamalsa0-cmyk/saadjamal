@@ -1,6 +1,6 @@
 # Cloudflare Worker, as on gulforbit.sa: the static export (out/) is served as assets,
 # and worker/index.ts runs only for the form endpoint under /api/.
-name = "saad-jamal"
+name = "saadjamal"
 main = "worker/index.ts"
 compatibility_date = "2026-10-01"
 compatibility_flags = ["nodejs_compat"]
